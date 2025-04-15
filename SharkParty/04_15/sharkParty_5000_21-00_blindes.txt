@@ -59,65 +59,272 @@ Discord
 Twitter
 Youtube
 
-Start Time ：04-15 21:00
+Start Time ：04-15 20:00
 Completed  
 Summary
 Info
 Prize
 Blinds
-Prize Pool
-View More
-
-5,000
-Registered
-143
-In The Money (%)
-35 (25%)
-Tourney
-Shark Party
-Game
-NL Hold'em
-Start Time
-04/15 21:00
-Late Registration
-Within 52 Min
-Buy-In
-
-25
-Re-Entry
-
-25
- ( Unlimited )
-Starting Chips
-10,000
-Requirements
-None
-Club
-SharkParty
+Lv
 Blinds
-L34(25,000/50,000 Ante6,000)
-Re-Buy
- Not Available
-Add-On
- Not Available
-Ante Type
-Standard Ante
-Blind Interval
-4mins
-On Break
-5 Minute Break On the Hour
+Ante
 TimeBank
+Mins
+1Re-Entry
+50/100
+15
 15s x 2
-Min/Max Players
-5~10,000
-Players Per Table
-9
-Network
-MTT Network
-Contract
-0x598D217...3C78
-Rules
-О дополнительных призах за участие в турнирах можно узнать в телеграм-канале: https://t.me/sharkparty1kk
+4
+2Re-Entry
+60/120
+18
+-
+4
+3Re-Entry
+70/140
+21
+-
+4
+4Re-Entry
+80/160
+24
+-
+4
+5Re-Entry
+100/200
+30
+-
+4
+6Re-Entry
+120/240
+36
+-
+4
+7Re-Entry
+140/280
+42
+15s x 1
+4
+8Re-Entry
+170/340
+51
+-
+4
+9Re-Entry
+200/400
+60
+-
+4
+10Re-Entry
+250/500
+75
+-
+4
+11Re-Entry
+300/600
+90
+-
+4
+12Re-Entry
+400/800
+120
+-
+4
+13
+500/1,000
+150
+15s x 1
+4
+14
+600/1,200
+180
+-
+4
+15
+800/1,600
+240
+-
+4
+16
+1,000/2,000
+300
+-
+4
+17
+1,200/2,400
+360
+-
+4
+18
+1,400/2,800
+420
+-
+4
+19
+1,600/3,200
+480
+15s x 1
+4
+20
+1,800/3,600
+540
+-
+4
+21
+2,000/4,000
+600
+-
+4
+22
+2,500/5,000
+750
+-
+4
+23
+3,000/6,000
+900
+-
+4
+24
+3,500/7,000
+1,050
+-
+4
+25
+4,000/8,000
+1,200
+15s x 1
+4
+26
+5,000/10,000
+1,500
+-
+4
+27
+6,000/12,000
+1,800
+-
+4
+28
+8,000/16,000
+2,400
+-
+4
+29
+10,000/20,000
+3,000
+-
+4
+30
+12,500/25,000
+3,750
+-
+4
+31
+15,000/30,000
+4,000
+15s x 1
+4
+32
+17,500/35,000
+4,500
+-
+4
+33
+20,000/40,000
+5,250
+-
+4
+34
+25,000/50,000
+6,000
+-
+4
+35
+30,000/60,000
+7,500
+-
+4
+36
+35,000/70,000
+9,000
+-
+4
+37
+40,000/80,000
+10,500
+15s x 1
+4
+38
+50,000/100K
+15,000
+-
+4
+39
+60,000/120K
+18,000
+-
+4
+40
+80,000/160K
+24,000
+-
+4
+41
+100K/200K
+30,000
+-
+4
+42
+125K/250K
+37,500
+-
+4
+43
+150K/300K
+45,000
+15s x 1
+4
+44
+175K/350K
+52,500
+-
+4
+45
+200K/400K
+60,000
+-
+4
+46
+250K/500K
+75,000
+-
+4
+47
+300K/600K
+90,000
+-
+4
+48
+350K/700K
+105K
+-
+4
+49
+400K/800K
+120K
+15s x 1
+4
+50
+450K/900K
+135K
+-
+4
+51
+500K/1M
+150K
+-
+4
 Players（143）
 Rank
 Players
@@ -125,718 +332,718 @@ Chips
 1
 
 
-軒轅幣
-1.74M
-2
-
-
-BabyShark1kk
-Finish
-3
-
-
-Pivo
-Finish
-4
-
-
-翻牌前領先都輸
-Finish
-5
-
-
-Ggog001
-Finish
-6
-
-
-Pavelll12
-Finish
-7
-
-
-FaceOffAceGS
-Finish
-8
-
-
 Cherchel22
-Finish
-9
-
-
-Puli🛸Papuli
-Finish
-10
-
-
-Wodan
-Finish
-11
-
-
-USSR20
-Finish
-12
-
-
-Andrei Horbach
-Finish
-13
-
-
-Deep fish
-Finish
-14
-
-
-SS_CHET88
-Finish
-15
-
-
-efialt
-Finish
-16
-
-
-Yaroslav
-Finish
-17
-
-
-erikizoli
-Finish
-18
-
-
-Piligrim
-Finish
-19
-
-
-KetchupNels
-Finish
-20
-
-
-simeonebest
-Finish
-21
-
-
-san4ous333
-Finish
-22
-
-
-rodgimenez
-Finish
-23
-
-
-MTTCHAMP
-Finish
-24
-
-
-Adon2024
-Finish
-25
+1.7M
+2
 
 
 Divergent
 Finish
-26
+3
 
 
-Andremeksika
+Garubash
 Finish
-27
+4
 
 
-vinchester888
+DVAR
 Finish
-28
+5
 
 
-Andrey 55
+itomal
 Finish
-29
+6
+
+
+WJ168
+Finish
+7
+
+
+Morisey
+Finish
+8
+
+
+BabyShark1kk
+Finish
+9
+
+
+ThanhThuy
+Finish
+10
 
 
 Ali-cham
 Finish
-30
-
-
-GariScorpion
-Finish
-31
-
-
-Zaruba
-Finish
-32
-
-
-Raya ne shutit
-Finish
-33
+11
 
 
 BlaDeL
 Finish
+12
+
+
+Yettti
+Finish
+13
+
+
+IhorTymos
+Finish
+14
+
+
+Liao
+Finish
+15
+
+
+WP888
+Finish
+16
+
+
+YuriyZolotov
+Finish
+17
+
+
+Бухич
+Finish
+18
+
+
+Harissp
+Finish
+19
+
+
+simeonebest
+Finish
+20
+
+
+Raya ne shutit
+Finish
+21
+
+
+Gekkon
+Finish
+22
+
+
+DedSedoved
+Finish
+23
+
+
+ดวงดี
+Finish
+24
+
+
+Rubick
+Finish
+25
+
+
+Max
+Finish
+26
+
+
+Plahoy Channel
+Finish
+27
+
+
+Burr666
+Finish
+28
+
+
+AAA666AAA
+Finish
+29
+
+
+KetchupNels
+Finish
+30
+
+
+pavel datcenko
+Finish
+31
+
+
+ProMaks999
+Finish
+32
+
+
+seigetan
+Finish
+33
+
+
+Pivo
+Finish
 34
 
 
-Advertencia88
+써리
 Finish
 35
 
 
-99,9 bb
+de1ayukrasivo
 Finish
 Prize
 36
 
 
-Sunchello
+Exnaton
 Finish
 37
 
 
-TTAP
+Dzianis
 Finish
 38
 
 
-Twi1ight
+MK
 Finish
 39
 
 
-Mad ube
+Maruna
 Finish
 40
 
 
-Paljanica
+saluteninja17
 Finish
 41
 
 
-JosieFlower
+kaskir
 Finish
 42
 
 
-Саламбо
+Night
 Finish
 43
 
 
-assyriaNHero
+Zip1313
 Finish
 44
 
 
-Palyanitsya
+Karate Perry
 Finish
 45
 
 
-Alx
+ปลายสวย
 Finish
 46
 
 
-MK
+PV🍀🍀🍀
 Finish
 47
 
 
-🔷️S🔷️
+Maxwatplook
 Finish
 48
 
 
-Tesssa
+Younggu
 Finish
 49
 
 
-LuckyTaktik
+軒轅幣
 Finish
 50
 
 
-Winners
+MTTInvest
 Finish
 51
 
 
-Ahulli
+DRONVUGG
 Finish
 52
 
 
-Lastofus
+NextTimeDudee
 Finish
 53
 
 
-Hận MTT
+Vnukpixto
 Finish
 54
 
 
-chebupell
+Slon777
 Finish
 55
 
 
-WetTamara
+Ivan Diuligher
 Finish
 56
 
 
-IhorTymos
+Jul Trần
 Finish
 57
 
 
-YuriyZolotov
+TREKMEK
 Finish
 58
 
 
-rebel249
+Bmwiiika
 Finish
 59
 
 
-FranColapin
+Lorien
 Finish
 60
 
 
-saluteninja17
+笨色麥卵摳
 Finish
 61
 
 
-Urakz
+Andrei Horbach
 Finish
 62
 
 
-KODOLS
+Kakao73
 Finish
 63
 
 
-Maxud
+Zaruba
 Finish
 64
 
 
-Denzel
+Hảo Phan
 Finish
 65
 
 
-Vadim
+FLIPGOD
 Finish
 66
 
 
-antey1390
+Parano
 Finish
 67
 
 
-Artas
+Randonklein
 Finish
 68
 
 
-Vladyslav
+assyriaNHero
 Finish
 69
 
 
-Kakao73
+Aworlobs
 Finish
 70
 
 
-Erector
+MntS1ntez
 Finish
 71
 
 
-Petya ebaSH1T
+antipator
 Finish
 72
 
 
-MTTInvest
+Mono
 Finish
 73
 
 
-hoya
+Vadim
 Finish
 74
 
 
-MntS1ntez
+Kostarik
 Finish
 75
 
 
-Fire007
+RaMaX
 Finish
 76
 
 
-Lnwza007x
+감성돔6짜
 Finish
 77
 
 
-viebu
+탕순
 Finish
 78
 
 
-Nefertiti
+HollowKingth
 Finish
 79
 
 
-xxxSavage
+viebu
 Finish
 80
 
 
-M9iSKO
+Karelin Pasha
 Finish
 81
 
 
-Bmwiiika
+Hiếu Ngô
 Finish
 82
 
 
-Blocks
+Psix
 Finish
 83
 
 
-Nonnawat
+rebel249
 Finish
 84
 
 
-Ludik
+Badalandabat
 Finish
 85
 
 
-Vnukpixto
+Minh Tuệ
 Finish
 86
 
 
-Rubick
+VA1002
 Finish
 87
 
 
-SubarinG
+Fafej
 Finish
 88
 
 
-Zaperdon
+RazzSet666
 Finish
 89
 
 
-Luckshot
+Pavelll12
 Finish
 90
 
 
-de1ayukrasivo
+Bon bon
 Finish
 91
 
 
-Abramelin
+jorgedavis
 Finish
 92
 
 
-TREKMEK
+antey1390
 Finish
 93
 
 
-XAPbKOB ♥️
+FatalisT
 Finish
 94
 
 
-antipator
+Jin Richard
 Finish
 95
 
 
-GTOISOVERRATED
+Grafdurakula
 Finish
 96
 
 
-shantaram64
+Nach47
 Finish
 97
 
 
-hirsher55
+Vivi_oza12
 Finish
 98
 
 
-Parano
+몰라몰라
 Finish
 99
 
 
-DRONVUGG
+AAA05A
 Finish
 100
 
 
-kulsam1
+FaceOffAceGS
 Finish
 101
 
 
-PV🍀🍀🍀
+Minh Anh 2002
 Finish
 102
 
 
-zvezdny1978
+Simba161
 Finish
 103
 
 
-Aling💕
+barristerys
 Finish
 104
 
 
-Yariksa
+Nuunok
 Finish
 105
 
 
-DreamWorks
+P i K K A
 Finish
 106
 
 
-RaMaX
+Twi1ight
 Finish
 107
 
 
-Volgar
+android24
 Finish
 108
 
 
-The Thinker
+Vladslav730
 Finish
 109
 
 
-LA23
+M9iSKO
 Finish
 110
 
 
-Vladslav730
+Haji udin69
 Finish
 111
 
 
-ProMaks999
+k1ngsgamb1t
 Finish
 112
 
 
-DedSedoved
+AlexVlas
 Finish
 113
 
 
-sm1leork
+UniMai
 Finish
 114
 
 
-Kateruna
+Chandraq
 Finish
 115
 
 
-Aworlobs
+Balrog1899
 Finish
 116
 
 
-Balrog1899
+쭈야
 Finish
 117
 
 
-Fisherman1
+Puiifaii
 Finish
 118
 
 
-divergent
+Dalbo
 Finish
 119
 
 
-Antisharks
+Syanaaa
 Finish
 120
 
 
-Cr0wnUpGuy
+romanambervan
 Finish
 121
 
 
-Irina_900
+divergent
 Finish
 122
 
 
-HollowKingth
+alebandung
 Finish
 123
 
 
-MessiGG
+kevin21
 Finish
 124
 
 
-AreS
+Oliver_bOy
 Finish
 125
 
 
-HarisPK9
+victorias
 Finish
 126
 
 
-Luckymagic
+NerealnayaZona
 Finish
 127
 
 
-REYNHART
+Vertimex
 Finish
 128
 
 
-okrean
+tortt
 Finish
 129
 
 
-บ้านพัก
+CaptennnX
 Finish
 130
 
 
-Vitamihh
+paalaad
 Finish
 131
 
 
-Alexsandrua
+Tм.
 Finish
 132
 
 
-Slon777
+Tip4eg
 Finish
 133
 
 
-kevin21
+Shadow X
 Finish
 134
 
 
-Noway
+Zam
 Finish
 135
 
 
-Fara09
+Bjoska62
 Finish
 136
 
 
-Puiifaii
+Cunning
 Finish
 137
 
 
-k1ngsgamb1t
+Ciaaaaaa
 Finish
 138
 
 
-Stasyan4ik
+worldman
 Finish
 139
 
 
-FLIPGOD
+Mustafa
 Finish
 140
 
 
-Gobish
+Stasyan4ik
 Finish
 141
 
 
-UniMai
+อาโน
 Finish
 142
 
 
-dksqz
+Grendel
 Finish
 143
 
 
-GG
+KAZANtip 🍀
 Finish
 Reviews
 Write a review
