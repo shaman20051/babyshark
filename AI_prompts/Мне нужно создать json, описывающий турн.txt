@@ -1,0 +1,42 @@
+Мне нужно создать json, описывающий турнир по покеру, содержащий следующую структуру:
+1. Название турнира
+2. Начало турнира (дата и время)
+3. Статус турнира (анонсирован, регистрация, поздняя регистрация, идет, завершен)
+4. Информация о турнире (Info):
+    - Prize Pool - 5000
+    - Registered - 143
+    - Re-entered - 24
+    - In The Money - 35
+    - Название - ( например SharkParty)
+    - Тип игрыы или Game -  (например NL Holdem)
+    - Старт (дата и время)
+    - Поздняя регистрация - 40 мин
+    - Buy-in 25
+    - Re-Entry 25
+    - Starting Chips - 10,000
+    - Requirements - None
+    - Club - SharkParty
+    - Blinds - L37(40,000/80,000 Ante10,500)
+    - Re-Buy - Not Available
+    - Add-On - Not Available
+    - Ante Type - Standard Ante
+    - Blind Interval - 4mins
+    - On Break - 5 Minute Break On the Hour
+    - TimeBank - 15s x 2
+    - Min/Max Players - 5~10,000
+    - Players Per Table - 9
+    - Network - MTT Network
+    - Contract - 0x598D217...3C78
+    - Rules - О дополнительных призах за участие в турнирах можно узнать в телеграм-канале: https://t.me/sh
+5. Призы (Prize) в виде таблицы:
+    Place   Prize
+    1   900
+    2   800
+    3   700
+    4   600
+6. Players в виде таблицы:
+    Rank    Players Chips
+    1   Dammy   30000
+    2   Sony    23000
+    3   Peter   300
+    4   SaSA    Finished
