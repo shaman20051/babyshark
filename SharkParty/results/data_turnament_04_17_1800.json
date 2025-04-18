@@ -1,0 +1,1953 @@
+{
+    "tournamentName": "Shark Party",
+    "startTime": "2025-04-17T18:00:00+03:00",
+    "status": "Completed  ",
+    "info": {
+        "prizePool": 8000,
+        "registered": 167,
+        "reEntered": null,
+        "inTheMoney": 33,
+        "name": "Shark Party",
+        "game": "NL Hold'em",
+        "start": "2025-04-17T18:00:00+03:00",
+        "lateRegistration": "96 Min",
+        "buyIn": 27,
+        "reEntry": 27,
+        "startingChips": 10000,
+        "requirements": "None",
+        "club": "SharkParty",
+        "blinds": "L35(30,000/60,000 Ante7,500)",
+        "reBuy": "Not Available",
+        "addOn": "Not Available",
+        "anteType": "Standard Ante",
+        "blindInterval": "7mins",
+        "onBreak": "5 Minute Break On the Hour",
+        "timeBank": "15s x 2",
+        "minMaxPlayers": "5~10,000",
+        "playersPerTable": 9,
+        "network": "MTT Network",
+        "contract": "0x598D217...3C78"
+    },
+    "prize": [
+        {
+            "place": "1",
+            "prize": 1581.92
+        },
+        {
+            "place": "2",
+            "prize": 1242.93
+        },
+        {
+            "place": "3",
+            "prize": 1016.94
+        },
+        {
+            "place": "4",
+            "prize": 677.96
+        },
+        {
+            "place": "5",
+            "prize": 564.97
+        },
+        {
+            "place": "6",
+            "prize": 451.97
+        },
+        {
+            "place": "7",
+            "prize": 338.98
+        },
+        {
+            "place": "8",
+            "prize": 225.98
+        },
+        {
+            "place": "9",
+            "prize": 112.99
+        },
+        {
+            "place": "10",
+            "prize": 101.69
+        },
+        {
+            "place": "11-15",
+            "prize": 90.39
+        },
+        {
+            "place": "16-20",
+            "prize": 79.09
+        },
+        {
+            "place": "21-29",
+            "prize": 67.79
+        },
+        {
+            "place": "30-33",
+            "prize": 56.49
+        }
+    ],
+    "blinds": [
+        {
+            "level": 1,
+            "blind": "50/100",
+            "ante": 15,
+            "timebank": "15s x 2",
+            "mins": 7
+        },
+        {
+            "level": 2,
+            "blind": "60/120",
+            "ante": 18,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 3,
+            "blind": "70/140",
+            "ante": 21,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 4,
+            "blind": "80/160",
+            "ante": 24,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 5,
+            "blind": "100/200",
+            "ante": 30,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 6,
+            "blind": "120/240",
+            "ante": 36,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 7,
+            "blind": "140/280",
+            "ante": 42,
+            "timebank": "15s x 1",
+            "mins": 7
+        },
+        {
+            "level": 8,
+            "blind": "170/340",
+            "ante": 51,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 9,
+            "blind": "200/400",
+            "ante": 60,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 10,
+            "blind": "250/500",
+            "ante": 75,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 11,
+            "blind": "300/600",
+            "ante": 90,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 12,
+            "blind": "400/800",
+            "ante": 120,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 13,
+            "blind": "500/1,000",
+            "ante": 150,
+            "timebank": "15s x 1",
+            "mins": 7
+        },
+        {
+            "level": 14,
+            "blind": "600/1,200",
+            "ante": 180,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 15,
+            "blind": "800/1,600",
+            "ante": 240,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 16,
+            "blind": "1,000/2,000",
+            "ante": 300,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 17,
+            "blind": "1,200/2,400",
+            "ante": 360,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 18,
+            "blind": "1,400/2,800",
+            "ante": 420,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 19,
+            "blind": "1,600/3,200",
+            "ante": 480,
+            "timebank": "15s x 1",
+            "mins": 7
+        },
+        {
+            "level": 20,
+            "blind": "1,800/3,600",
+            "ante": 540,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 21,
+            "blind": "2,000/4,000",
+            "ante": 600,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 22,
+            "blind": "2,500/5,000",
+            "ante": 750,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 23,
+            "blind": "3,000/6,000",
+            "ante": 900,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 24,
+            "blind": "3,500/7,000",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 25,
+            "blind": "4,000/8,000",
+            "ante": null,
+            "timebank": "15s x 1",
+            "mins": 7
+        },
+        {
+            "level": 26,
+            "blind": "5,000/10,000",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 27,
+            "blind": "6,000/12,000",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 28,
+            "blind": "8,000/16,000",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 29,
+            "blind": "10,000/20,000",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 30,
+            "blind": "12,500/25,000",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 31,
+            "blind": "15,000/30,000",
+            "ante": null,
+            "timebank": "15s x 1",
+            "mins": 7
+        },
+        {
+            "level": 32,
+            "blind": "17,500/35,000",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 33,
+            "blind": "20,000/40,000",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 34,
+            "blind": "25,000/50,000",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 35,
+            "blind": "30,000/60,000",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 36,
+            "blind": "35,000/70,000",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 37,
+            "blind": "40,000/80,000",
+            "ante": null,
+            "timebank": "15s x 1",
+            "mins": 7
+        },
+        {
+            "level": 38,
+            "blind": "50,000/100K",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 39,
+            "blind": "60,000/120K",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 40,
+            "blind": "80,000/160K",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 41,
+            "blind": "100K/200K",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 42,
+            "blind": "125K/250K",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 43,
+            "blind": "150K/300K",
+            "ante": null,
+            "timebank": "15s x 1",
+            "mins": 7
+        },
+        {
+            "level": 44,
+            "blind": "175K/350K",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 45,
+            "blind": "200K/400K",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 46,
+            "blind": "250K/500K",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 47,
+            "blind": "300K/600K",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 48,
+            "blind": "350K/700K",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 49,
+            "blind": "400K/800K",
+            "ante": null,
+            "timebank": "15s x 1",
+            "mins": 7
+        },
+        {
+            "level": 50,
+            "blind": "450K/900K",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        },
+        {
+            "level": 51,
+            "blind": "500K/1M",
+            "ante": null,
+            "timebank": "-",
+            "mins": 7
+        }
+    ],
+    "players": [
+        {
+            "rank": 1,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/d926caefd23cba7bc5e0fd749b4a7408",
+                "nickname": "Velliant"
+            },
+            "chips": 2470000
+        },
+        {
+            "rank": 2,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "kostya2504"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 3,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/daaeab8f3c2adc1f993d91990b88b9de",
+                "nickname": "de1ayukrasivo"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 4,
+            "player": {
+                "country": "th",
+                "avatar": "./1800_finish_files/541d48b6783f340c96b4b1d9d0abb728",
+                "nickname": "kkkai"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 5,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/202f708d9a60d13e078ca8f144f68d65",
+                "nickname": "Lorien"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 6,
+            "player": {
+                "country": "th",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "FullSky"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 7,
+            "player": {
+                "country": "by",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "Garubash"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 8,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/578efe76e004a07b212cbb4400d9236a",
+                "nickname": "matreshka"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 9,
+            "player": {
+                "country": "th",
+                "avatar": "./1800_finish_files/3b076b9b82a4e232ee88f94777f409d3",
+                "nickname": "ExTory-"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 10,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/e4b3155e556d424acbe51dd8cbe1496a",
+                "nickname": "GTObot"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 11,
+            "player": {
+                "country": "vn",
+                "avatar": "./1800_finish_files/7a1e566b0abc5a295af769aaf007a553",
+                "nickname": "thanhlam280106"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 12,
+            "player": {
+                "country": "kz",
+                "avatar": "./1800_finish_files/581946aa9573e2c1a5a6891407ab65b1",
+                "nickname": "AlliseWin"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 13,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/950af4f5409ac8be7ac849f3f91de0ad",
+                "nickname": "romanambervan"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 14,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "Garusl"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 15,
+            "player": {
+                "country": "kz",
+                "avatar": "./1800_finish_files/930dcee14f6a572c195a6bc1da7d3510",
+                "nickname": "Kamila"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 16,
+            "player": {
+                "country": "id",
+                "avatar": "./1800_finish_files/1792ab6a827e949158f934c3576a0a0c",
+                "nickname": "T H E Z O N K"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 17,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "Firstmesto"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 18,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/e168ae70637bb250dc1aab0f833bebed",
+                "nickname": "YuriyZolotov"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 19,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/w_93e1078e3.png",
+                "nickname": "juleta"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 20,
+            "player": {
+                "country": "vn",
+                "avatar": "./1800_finish_files/f3819a85145b0d94659b6aae1f87c6a0",
+                "nickname": "SimSon"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 21,
+            "player": {
+                "country": "vn",
+                "avatar": "./1800_finish_files/f81f581525ebb67a17b19ace815d5199",
+                "nickname": "AnhHa18Tuoi"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 22,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "Antonchik2025"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 23,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "solodushka"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 24,
+            "player": {
+                "country": "kz",
+                "avatar": "./1800_finish_files/c603f1ddc9d49139852f91ef855535c9",
+                "nickname": "Denzel"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 25,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/29dcc4030b592ada4ac6dc2591fd48b7",
+                "nickname": "GermaineHo"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 26,
+            "player": {
+                "country": "vn",
+                "avatar": "./1800_finish_files/ce9f157a3811393c6695b74032429dac",
+                "nickname": "Bugatti"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 27,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/01511fa809035fdb4095f977e2191eca",
+                "nickname": "MTNK90"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 28,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/b26de5b4b9911de4002f78ae934c3c77",
+                "nickname": "Sergik"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 29,
+            "player": {
+                "country": "md",
+                "avatar": "./1800_finish_files/8f7e1d5c659c067cc396e01f10c92f4e",
+                "nickname": "Pivo"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 30,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/fb7c490f150edfa7556bc3de9d20a46e",
+                "nickname": "gravets"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 31,
+            "player": {
+                "country": "es",
+                "avatar": "./1800_finish_files/f85aaf133c5b29f093925c9c24ceb827",
+                "nickname": "Seroby"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 32,
+            "player": {
+                "country": "by",
+                "avatar": "./1800_finish_files/86e7ecde861bdea68d198aac058d3aa3",
+                "nickname": "Kosmood"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 33,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/cd6d033341f068b74217679b7acd0500",
+                "nickname": "LuckyTaktik"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 34,
+            "player": {
+                "country": "kr",
+                "avatar": "./1800_finish_files/c519e55480023fc57c7effdea108acb2",
+                "nickname": "ORANGEBONG🤪"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 35,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/4101b076bbb8ee4a5df0f79f95de98b3",
+                "nickname": "Ludik"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 36,
+            "player": {
+                "country": "ve",
+                "avatar": "./1800_finish_files/00d432fa8c4bc290fd7a946b6d55eed6",
+                "nickname": "Weedman77"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 37,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "itomal"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 38,
+            "player": {
+                "country": "ve",
+                "avatar": "./1800_finish_files/ff43cd3b3a6dec027b21812493dace17",
+                "nickname": "VENOM"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 39,
+            "player": {
+                "country": "hk",
+                "avatar": "./1800_finish_files/32b5a570d83a9a016eac4d99988b2fcf",
+                "nickname": "I'mBack"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 40,
+            "player": {
+                "country": "sg",
+                "avatar": "./1800_finish_files/64b8ced2147b4822ac5f58c5374a9762",
+                "nickname": "令狐大葱"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 41,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/f0a1125752ed61cddb31e40d57b4d0dc",
+                "nickname": "FaceOffAceGS"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 42,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/020350dc0caf94155cc1d1c9eaf2a1ae",
+                "nickname": "Raya ne shutit"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 43,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "leprekon"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 44,
+            "player": {
+                "country": "kz",
+                "avatar": "./1800_finish_files/1976ebe2bf0fb0d164b77cf6b577e62b",
+                "nickname": "adi888"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 45,
+            "player": {
+                "country": "de",
+                "avatar": "./1800_finish_files/7def8e6a92b35b97fbaddb3a83baa3a0",
+                "nickname": "Vivi_oza12"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 46,
+            "player": {
+                "country": "th",
+                "avatar": "./1800_finish_files/4adbdf01dbdda15773aa638baafd2a94",
+                "nickname": "Bugg"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 47,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/bdc376f625b8a7f5562c29832c34f934",
+                "nickname": "Maxud"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 48,
+            "player": {
+                "country": "tw",
+                "avatar": "./1800_finish_files/454d82501837ea1a021c458e87aa1afe",
+                "nickname": "軒轅幣"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 49,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/454447309d423442a1ed4c48fa06e46b",
+                "nickname": "assyriaNHero"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 50,
+            "player": {
+                "country": "il",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "Adon2024"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 51,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/3266a5c21d0b7eb4a6c1ea17d049ab10",
+                "nickname": "RaMaX"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 52,
+            "player": {
+                "country": "id",
+                "avatar": "./1800_finish_files/853e073f3d9968fcd636b8569a4d34d3",
+                "nickname": "FOLD"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 53,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/c0610e80166e0bb1e845cacb6b6c57d5",
+                "nickname": "Erector"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 54,
+            "player": {
+                "country": "ch",
+                "avatar": "./1800_finish_files/a07776633acce8c625dd01acef162e47",
+                "nickname": "luckman"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 55,
+            "player": {
+                "country": "la",
+                "avatar": "./1800_finish_files/d62ba1521e5ac3b4446fc362ba8e0f76",
+                "nickname": "Vin2024"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 56,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "Ahead1Face"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 57,
+            "player": {
+                "country": "pl",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "Rust"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 58,
+            "player": {
+                "country": "th",
+                "avatar": "./1800_finish_files/bade918ffb51e9e3184641927514d861",
+                "nickname": "chocolate"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 59,
+            "player": {
+                "country": "by",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "InstaVlad"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 60,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/00e22faf780b7f089e16f5201a1bdbf4",
+                "nickname": "Safarov24"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 61,
+            "player": {
+                "country": "vn",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "Phu Nguyen"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 62,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "MTTInvest"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 63,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/573bbe52dad0e92e306fe134f75cc1e8",
+                "nickname": "Manimeyker"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 64,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/37e32e51580c0e8b07c7b3776e93d0e4",
+                "nickname": "Ali-cham"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 65,
+            "player": {
+                "country": "ro",
+                "avatar": "./1800_finish_files/a6149617b92a2ab523e2c99d09356890",
+                "nickname": "Bluff Me"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 66,
+            "player": {
+                "country": "de",
+                "avatar": "./1800_finish_files/5ccc9b9f43d6787817ee94f86a26015f",
+                "nickname": "shantaram64"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 67,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/52dd5e595a375cb6bc344667b878bbfd",
+                "nickname": "GONZA"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 68,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/1bed54b578418bef3671ec3ff4a1657c",
+                "nickname": "simeonebest"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 69,
+            "player": {
+                "country": "es",
+                "avatar": "./1800_finish_files/2d9caafe18f418c2dab0fab2b54c97a7",
+                "nickname": "DonGunDon"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 70,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/5405b0387f3851f21e08d2a8e12692df",
+                "nickname": "viebu"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 71,
+            "player": {
+                "country": "tw",
+                "avatar": "./1800_finish_files/1223107e263e5529f0b966bea1186e7c",
+                "nickname": "PEPE"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 72,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/6364d1a0a3ea4d1fd6ffcb6ffe7a3340",
+                "nickname": "Piligrim"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 73,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/5f5ef972f8300f5dc875d4af3b6a4780",
+                "nickname": "Sergej"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 74,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/ea49f0e865ebbb98ba7c8e80b5948808",
+                "nickname": "PV🍀🍀🍀"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 75,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/5b9f0e8ddc1889703b437f91d2d2fab8",
+                "nickname": "M9iSKO"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 76,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/800139419.jpg",
+                "nickname": "Vadim"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 77,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/61f6d22f73f3deca4f65b4ac938bce27",
+                "nickname": "Kateruna"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 78,
+            "player": {
+                "country": "lk",
+                "avatar": "./1800_finish_files/de705657a59a007f13162d360499018a",
+                "nickname": "B1881881"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 79,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/d2634e5c8a088a7e125c9d0e9b4563d6",
+                "nickname": "Petya ebaSH1T"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 80,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/bf93f188ef023c32a0d8085a6334a205",
+                "nickname": "Dem0nZT"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 81,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/cee306376472fd4ab29b422458373615",
+                "nickname": "saluteninja17"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 82,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/4a51722e2cb4bf0514949b7c250bae34",
+                "nickname": "san4ous333"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 83,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/23b29f2b535e3ca2a285530154a7b24a",
+                "nickname": "Kakao73"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 84,
+            "player": {
+                "country": "th",
+                "avatar": "./1800_finish_files/8fec303ef9075826f7b594c695eba5b9",
+                "nickname": "Danai Siyoung"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 85,
+            "player": {
+                "country": "vn",
+                "avatar": "./1800_finish_files/w_93e1078e3.png",
+                "nickname": "Cindy1999"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 86,
+            "player": {
+                "country": "cu",
+                "avatar": "./1800_finish_files/f45c26bfe6dd09b9c09846372283fb5b",
+                "nickname": "Randonklein"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 87,
+            "player": {
+                "country": "es",
+                "avatar": "./1800_finish_files/5343f39b602077f7406a6a3c65a59c8a",
+                "nickname": "Polloloko"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 88,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/82b119880df432ecc523dbdd1757e8ee",
+                "nickname": "KolyabAA"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 89,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/07e489db19fd2a000af0e4cf0ea6fbf3",
+                "nickname": "DizmirAA"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 90,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/5f0f714f7c8ac02317cc95b8c762ece0",
+                "nickname": "Cherchel22"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 91,
+            "player": {
+                "country": "gb",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "NAMHOANG99"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 92,
+            "player": {
+                "country": "tw",
+                "avatar": "./1800_finish_files/0b1e172b5cc5220135d5dff4c16bd3df",
+                "nickname": "翻牌前領先都輸"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 93,
+            "player": {
+                "country": "th",
+                "avatar": "./1800_finish_files/0466bb4d69f77f526c4e01046ee02178",
+                "nickname": "🧧ᴀʀᴍ🧧"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 94,
+            "player": {
+                "country": "th",
+                "avatar": "./1800_finish_files/a3ec8cd84e8eca7d718bacbadf77e4e1",
+                "nickname": "ตลกค้วย"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 95,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "DRONVUGG"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 96,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/d9e363014e8561cc2fc032ec071f605c",
+                "nickname": "Pavelll12"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 97,
+            "player": {
+                "country": "cu",
+                "avatar": "./1800_finish_files/d00e8f8712784a97e1120af2396eb83f",
+                "nickname": "HollowKingth"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 98,
+            "player": {
+                "country": "vn",
+                "avatar": "./1800_finish_files/a718b3d66b547d2c0b4c763800580446",
+                "nickname": "KissLuna"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 99,
+            "player": {
+                "country": "th",
+                "avatar": "./1800_finish_files/ece6a92bea1ac581265072c5b13d0ae9",
+                "nickname": "Quick1"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 100,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/db48e69e3f4b37659157a2128db4762a",
+                "nickname": "Lokked8held8"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 101,
+            "player": {
+                "country": "sg",
+                "avatar": "./1800_finish_files/2dfaa6f37cbee070490dc806427a0e5d",
+                "nickname": "zwok"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 102,
+            "player": {
+                "country": "pl",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "MadMaxBro"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 103,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "Divergent"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 104,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/9ff7a399d430669ffdbc2aa6b20ca121",
+                "nickname": "zeropoint"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 105,
+            "player": {
+                "country": "de",
+                "avatar": "./1800_finish_files/b6139253981e7d9696c55e63a25efefa",
+                "nickname": "Kostashka"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 106,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/cb286f43a7e181eb609ea835a21d730c",
+                "nickname": "gantver1"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 107,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/c00c43a180f388e071b1c22f206c747a",
+                "nickname": "Yra Tysovskyi"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 108,
+            "player": {
+                "country": "th",
+                "avatar": "./1800_finish_files/57eca6e64c46c3d7fa5b17e1b0f11c01",
+                "nickname": "What the hell?"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 109,
+            "player": {
+                "country": "es",
+                "avatar": "./1800_finish_files/cb61910e7264a07ec7bdd7513537712b",
+                "nickname": "Eric33"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 110,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/02845645f9c3435e7efd0dac39b3aaad",
+                "nickname": "VA1002"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 111,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/2a259ea0b7eef32ae6112f81ebab2ffb",
+                "nickname": "Barabuk"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 112,
+            "player": {
+                "country": "th",
+                "avatar": "./1800_finish_files/f0b6efb3bf3570ddf8b33d81084f29dd",
+                "nickname": "patti"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 113,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/0b824818696489382e78622f9a7359f3",
+                "nickname": "Klalafuda"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 114,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/f45dee61544b576d7e74c1a171d03054",
+                "nickname": "AKalinovskyi"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 115,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/762f1c1043583189c3700f990ee3502d",
+                "nickname": "yarrabeast"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 116,
+            "player": {
+                "country": "th",
+                "avatar": "./1800_finish_files/5211070c6a0c41f9caf1cf0cad3182cb",
+                "nickname": "KK999"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 117,
+            "player": {
+                "country": "by",
+                "avatar": "./1800_finish_files/4ca66c87ddc67a71f7a2e2e3d9fdad48",
+                "nickname": "scrlxrd"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 118,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/405b5de6f0e218e4fd4f9b6c01069459",
+                "nickname": "Burr666"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 119,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/460f602e75f004fa6227f12122bfbd3c",
+                "nickname": "ST1.Armada"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 120,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/4b3f23a80e9d5e39c895e688dddb670e",
+                "nickname": "Ch.amp"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 121,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/830f1b413cf55cdece1e069563fe5b8b",
+                "nickname": "divergent"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 122,
+            "player": {
+                "country": "kz",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "AZIAT22"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 123,
+            "player": {
+                "country": "vn",
+                "avatar": "./1800_finish_files/w_93e1078e3.png",
+                "nickname": "Thuyngo"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 124,
+            "player": {
+                "country": "th",
+                "avatar": "./1800_finish_files/487b71bc6d92abc0852dc1fb24ab9e06",
+                "nickname": "PatcharaKsp"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 125,
+            "player": {
+                "country": "tw",
+                "avatar": "./1800_finish_files/c427d21e77937af4dc0b38d23e9c64d1",
+                "nickname": "wa Ya Lin"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 126,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/3cec95a43a2cf9afed869426e1149e1c",
+                "nickname": "For1k"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 127,
+            "player": {
+                "country": "th",
+                "avatar": "./1800_finish_files/2c8f4a0681289514cb91c5991ab06601",
+                "nickname": "TTangel"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 128,
+            "player": {
+                "country": "vn",
+                "avatar": "./1800_finish_files/025e902fb44d5f8634ee16ccd4f8c8f1",
+                "nickname": "Liên Baby"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 129,
+            "player": {
+                "country": "kz",
+                "avatar": "./1800_finish_files/81562981cc328fe522446555f459606f",
+                "nickname": "lihodey"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 130,
+            "player": {
+                "country": "az",
+                "avatar": "./1800_finish_files/aa21fa28ea06f149ff0cde9c40981704",
+                "nickname": "USSR20"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 131,
+            "player": {
+                "country": "ma",
+                "avatar": "./1800_finish_files/bb5cd512ddc374773ec81cd5f86a125a",
+                "nickname": "Parano"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 132,
+            "player": {
+                "country": "kz",
+                "avatar": "./1800_finish_files/3786b2dd0406048ea2fdf1098522c1e6",
+                "nickname": "dlobanov"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 133,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/cdceca380143d85309c549126dea0603",
+                "nickname": "FatalisT"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 134,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/41b712a09825aadcba42272af1f45958",
+                "nickname": "Dinul"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 135,
+            "player": {
+                "country": "pt",
+                "avatar": "./1800_finish_files/426483758ab55745d89657d714ffacf4",
+                "nickname": "IhorTymos"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 136,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "Boor4ik"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 137,
+            "player": {
+                "country": "vn",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "Khanhthanbai"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 138,
+            "player": {
+                "country": "by",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "BlackGrampu$"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 139,
+            "player": {
+                "country": "id",
+                "avatar": "./1800_finish_files/5312902d8bf18c5cae014d43fd60825e",
+                "nickname": "winersss"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 140,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/ee34873936b7317dce4b5dcdd707f47e",
+                "nickname": "Ch. amp"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 141,
+            "player": {
+                "country": "vn",
+                "avatar": "./1800_finish_files/6340cf3d6864465f13d443fed6dc07bb",
+                "nickname": "Chu Chu"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 142,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/8d4918766c366d1d554c21d164276fa1",
+                "nickname": "KetchupNels"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 143,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/3d0c4bf39c0625f71aaf4ec6c005c3ff",
+                "nickname": "igoronia"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 144,
+            "player": {
+                "country": "th",
+                "avatar": "./1800_finish_files/26ff373155d531839660a7b603b2a94e",
+                "nickname": "CallMeBoss"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 145,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "DedSedoved"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 146,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/00586ccebea83f57538d2caac601c0d0",
+                "nickname": "FCreed13"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 147,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/w_93e1078e3.png",
+                "nickname": "Elena7p"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 148,
+            "player": {
+                "country": "kz",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "BlackSpace"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 149,
+            "player": {
+                "country": "md",
+                "avatar": "./1800_finish_files/9b83660df1758a19cb958c437c0df7d4",
+                "nickname": "Rig8888"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 150,
+            "player": {
+                "country": "kz",
+                "avatar": "./1800_finish_files/2deb8b23f565dc4370f6c518890e84ef",
+                "nickname": "🇰🇿Vimpex"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 151,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/dd477075675e06cb4dbc39a9eeadbe34",
+                "nickname": "Extra"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 152,
+            "player": {
+                "country": "kr",
+                "avatar": "./1800_finish_files/5dba564c2bb986660375cd47444dace0",
+                "nickname": "민기 장"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 153,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/b847be5ad18d028a330ca4debc1639c0",
+                "nickname": "nambat"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 154,
+            "player": {
+                "country": "vn",
+                "avatar": "./1800_finish_files/a939dd6a91ff3cc765c1937a84b212e3",
+                "nickname": "Sang Siêu Đỏ"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 155,
+            "player": {
+                "country": "vn",
+                "avatar": "./1800_finish_files/m_67fd2b16e.png",
+                "nickname": "DoTai"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 156,
+            "player": {
+                "country": "tw",
+                "avatar": "./1800_finish_files/76cff1fa3047ad1492fcb9d1ea282a42",
+                "nickname": "AAA666AAA"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 157,
+            "player": {
+                "country": "tw",
+                "avatar": "./1800_finish_files/e202e334bd605d9f12232a143520b18e",
+                "nickname": "ELVIN777"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 158,
+            "player": {
+                "country": "tw",
+                "avatar": "./1800_finish_files/56ef0b855d92f53433693bd8a4df1f48",
+                "nickname": "chiikawa💵"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 159,
+            "player": {
+                "country": "vn",
+                "avatar": "./1800_finish_files/w_93e1078e3.png",
+                "nickname": "ThuyQueen"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 160,
+            "player": {
+                "country": "ru",
+                "avatar": "./1800_finish_files/c9e75ccdc162013a95a19fa1610f1678",
+                "nickname": "Puli🛸Papuli"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 161,
+            "player": {
+                "country": "id",
+                "avatar": "./1800_finish_files/dff0494d616aeb5fcebb390c2d32e753",
+                "nickname": "SAPI"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 162,
+            "player": {
+                "country": "md",
+                "avatar": "./1800_finish_files/ecac32484520357d6b2b0017cd312d63",
+                "nickname": "Fishh1"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 163,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/6a9e774b679414580c86ee6885672bc4",
+                "nickname": "Nikollos77"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 164,
+            "player": {
+                "country": "th",
+                "avatar": "./1800_finish_files/3750204367dd75f6888954197b50aa88",
+                "nickname": "focusxp"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 165,
+            "player": {
+                "country": "id",
+                "avatar": "./1800_finish_files/661e10ed5a08a18d17089f4fd3d57d6b",
+                "nickname": "Habibi"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 166,
+            "player": {
+                "country": "vn",
+                "avatar": "./1800_finish_files/718d302d8e4803dbde2a079c0f117c62",
+                "nickname": "WUKONG"
+            },
+            "chips": "Finished"
+        },
+        {
+            "rank": 167,
+            "player": {
+                "country": "ua",
+                "avatar": "./1800_finish_files/7fe9569b98be48b38bc0b9fe6aa832a2",
+                "nickname": "leopold121"
+            },
+            "chips": "Finished"
+        }
+    ]
+}
