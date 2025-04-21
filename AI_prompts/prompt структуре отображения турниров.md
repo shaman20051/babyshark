@@ -7,6 +7,16 @@
 2. Описание каждого турнира отдельно и результаты по его окончанию
 3. Таблица Лидерборд лучших участников по результатам турниров.
 
+*** уточнение: данные по турнирам будут предоставляться в виде json-файла (прилагается 2 файла)
+Есть так же html макет (прилагается)
+
+# Вопрос: можешь предложить решение по выводу информации из json (желательно на Vue):
+- Список турниров
+- турниры по отдельности с полными результатами
+
+
+
+
 Возможно ты еще что-то предложишь...
 
 ## Вопрос: 
@@ -15,3 +25,25 @@
 Или твой вариант.
 
 *** уточнение: данные по турнирам будут предоставляться в виде json-файла
+
+
+
+
+Сейчас я подгружаю страницы и вывожу результат так:
+$htmlFilePath = __DIR__ . '/test_files/test_start.html'; // Or the path to your NEW HTML file
+$htmlFilePathFinish = __DIR__ . '/test_files/test_finish.html'; // Or the path to your NEW HTML file
+$htmlFilePathBlinds = __DIR__ . '/test_files/test_blinds.html'; // Or the path to your NEW HTML file
+$jsonOutputPath = __DIR__ . '/data_turnament.json';        // Path for the output JSON file
+
+Нужно переписать код так, чтобы файлы загружались и выгружались по следующему алгоритму:
+1. Сам файл php должен запускаться с параметром, в котором указывается имя папки с файлами html
+2. В указанной папке найти все файлы html, имена которых заканчиваются на "_start", взять ту часть имени, которая до "_start" и сохранить в массив имен.
+3. После этого последовательно загружать на основании этого массива имен файлы соответственно:
+$htmlFilePath = ИМЯ . _start.html'; // Or the path to your NEW HTML file
+$htmlFilePathFinish = ИМЯ . _finish.html'; // Or the path to your NEW HTML file
+$htmlFilePathBlinds = ИМЯ . _blinds.html'; // Or the path to your NEW HTML file
+
+и каждую итерацию выводить в отдельный файл
+$jsonOutputPath = data_turnament_ИМЯ.json';  
+
+Если не понятно объяснил - уточняйте или предложите свой вариант последовательной обработки файлов с окончаниями имен "_start", "_finish", "_blinds"
