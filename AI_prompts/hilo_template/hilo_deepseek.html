@@ -717,10 +717,185 @@
                     <ul class="categories-list">
                         <li class="categories-list__item"><a href="#">Новости (24)</a></li>
                         <li class="categories-list__item"><a href="#">Стратегии (18)</a></li>
+                        <li class="categories-list__item"><a href="#">Турниры (15)</a></li>
+                        <li class="categories-list__item"><a href="#">Обзоры (12)</a></li>
+                        <li class="categories-list__item"><a href="#">Интервью (8)</a></li>
+                        <li class="categories-list__item"><a href="#">Для начинающих (22)</a></li>
                     </ul>
+                </div>
+
+                <div class="widget">
+                    <h3 class="widget__title">Популярные статьи</h3>
+                    <article class="announcement-item">
+                        <h4 class="announcement-item__title"><a href="#">10 ошибок начинающих игроков</a></h4>
+                        <div class="announcement-item__meta">
+                            <time datetime="2024-04-20">20 апреля 2024</time>
+                        </div>
+                    </article>
+                    <article class="announcement-item">
+                        <h4 class="announcement-item__title"><a href="#">Как считать ауты и шансы банка</a></h4>
+                        <div class="announcement-item__meta">
+                            <time datetime="2024-04-15">15 апреля 2024</time>
+                        </div>
+                    </article>
+                    <article class="announcement-item">
+                        <h4 class="announcement-item__title"><a href="#">WSOP 2024: главные события</a></h4>
+                        <div class="announcement-item__meta">
+                            <time datetime="2024-04-10">10 апреля 2024</time>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="widget">
+                    <h3 class="widget__title">Теги</h3>
+                    <div class="tags-cloud">
+                        <a href="#" class="tags-cloud__item">Техасский Холдем</a>
+                        <a href="#" class="tags-cloud__item">Омаха</a>
+                        <a href="#" class="tags-cloud__item">Турниры</a>
+                        <a href="#" class="tags-cloud__item">Кэш-игры</a>
+                        <a href="#" class="tags-cloud__item">Банкролл</a>
+                        <a href="#" class="tags-cloud__item">Психология</a>
+                        <a href="#" class="tags-cloud__item">Блеф</a>
+                        <a href="#" class="tags-cloud__item">WSOP</a>
+                    </div>
                 </div>
             </aside>
         </div>
+
+        <footer class="footer">
+            <div class="footer__content">
+                <div class="footer__column">
+                    <h4 class="footer__column-title">О нас</h4>
+                    <nav class="footer__links">
+                        <a href="#" class="footer__link">О компании</a>
+                        <a href="#" class="footer__link">Наша команда</a>
+                        <a href="#" class="footer__link">Контакты</a>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Ресурсы</h4>
+                    <nav class="footer__links">
+                        <a href="#" class="footer__link">Блог</a>
+                        <a href="#" class="footer__link">Обучение</a>
+                        <a href="#" class="footer__link">FAQ</a>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Правовая информация</h4>
+                    <nav class="footer__links">
+                        <a href="#" class="footer__link">Правила</a>
+                        <a href="#" class="footer__link">Политика конфиденциальности</a>
+                        <a href="#" class="footer__link">Условия использования</a>
+                    </nav>
+                </div>
+                <div class="footer__column">
+                    <h4 class="footer__column-title">Социальные сети</h4>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link">FB</a>
+                        <a href="#" class="footer__social-link">TW</a>
+                        <a href="#" class="footer__social-link">IG</a>
+                        <a href="#" class="footer__social-link">YT</a>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <p>© 2024 Exan13 Poker. Все права защищены.</p>
+                </div>
+            </div>
+        </footer>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Mobile menu toggle
+            const burgerButton = document.getElementById('burger-button');
+            const mainMenu = document.getElementById('main-menu');
+            
+            if (burgerButton && mainMenu) {
+                burgerButton.addEventListener('click', () => {
+                    const isActive = mainMenu.classList.contains('menu--active');
+                    mainMenu.classList.toggle('menu--active');
+                    burgerButton.classList.toggle('burger--active');
+                    burgerButton.setAttribute('aria-expanded', String(!isActive));
+                    document.body.style.overflow = isActive ? '' : 'hidden';
+                });
+            }
+
+            // Dropdown toggles
+            const dropdownToggles = document.querySelectorAll('.dropdown__toggle');
+            dropdownToggles.forEach(toggle => {
+                toggle.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const dropdown = toggle.closest('.dropdown');
+                    const isActive = dropdown.classList.contains('dropdown--active');
+                    
+                    // Close all dropdowns first
+                    document.querySelectorAll('.dropdown').forEach(d => {
+                        if (d !== dropdown) {
+                            d.classList.remove('dropdown--active');
+                            d.querySelector('.dropdown__toggle')?.setAttribute('aria-expanded', 'false');
+                        }
+                    });
+                    
+                    // Toggle current dropdown
+                    if (!isActive) {
+                        dropdown.classList.add('dropdown--active');
+                        toggle.setAttribute('aria-expanded', 'true');
+                    }
+                });
+            });
+
+            // Close dropdowns when clicking outside
+            document.addEventListener('click', () => {
+                document.querySelectorAll('.dropdown').forEach(dropdown => {
+                    dropdown.classList.remove('dropdown--active');
+                    dropdown.querySelector('.dropdown__toggle')?.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            // Language selection
+            const langItems = document.querySelectorAll('.dropdown__item--lang');
+            const langText = document.querySelector('.dropdown__text');
+            
+            langItems.forEach(item => {
+                item.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const lang = item.getAttribute('data-lang');
+                    if (langText) langText.textContent = lang.toUpperCase();
+                    
+                    langItems.forEach(i => i.classList.remove('dropdown__item--selected'));
+                    item.classList.add('dropdown__item--selected');
+                });
+            });
+
+            // Theme switcher
+            const themeToggle = document.getElementById('theme-toggle');
+            const themeLabel = themeToggle?.querySelector('.dropdown__theme-label');
+            const body = document.getElementById('page-body');
+            
+            if (themeToggle) {
+                themeToggle.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const isDark = body.classList.contains('body--dark-theme');
+                    
+                    if (isDark) {
+                        body.classList.remove('body--dark-theme');
+                        if (themeLabel) themeLabel.textContent = 'Светлая тема';
+                        localStorage.setItem('theme', 'light');
+                    } else {
+                        body.classList.add('body--dark-theme');
+                        if (themeLabel) themeLabel.textContent = 'Темная тема';
+                        localStorage.setItem('theme', 'dark');
+                    }
+                });
+            }
+            
+            // Apply saved theme
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme === 'dark') {
+                body.classList.add('body--dark-theme');
+                if (themeLabel) themeLabel.textContent = 'Темная тема';
+            }
+        });
+    </script>
 </body>
 </html>
