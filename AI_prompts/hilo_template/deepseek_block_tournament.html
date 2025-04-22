@@ -1,0 +1,447 @@
+<section class="tournaments-section">
+    <div class="tournaments-filters">
+        <form class="tournaments-filters__form">
+            <span class="tournaments-filters__label">Фильтровать по:</span>
+            <select class="tournaments-filters__select" name="status" aria-label="Статус турнира">
+                <option value="all" selected>Все турниры</option>
+                <option value="finished">Законченные</option>
+                <option value="upcoming">Запланированные</option>
+            </select>
+            <select class="tournaments-filters__select" name="sort" aria-label="Сортировка">
+                <option value="newest" selected>Сначала новые</option>
+                <option value="oldest">Сначала старые</option>
+                <option value="popular">По популярности</option>
+                <option value="leaderboards">По лидербордам</option>
+            </select>
+            <button type="submit" class="tournaments-filters__button" aria-label="Применить фильтры">
+                <span class="tournaments-filters__button-text">Применить</span>
+                <svg class="tournaments-filters__button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+                    <path d="M4.25 5.61C6.27 8.2 10 13 10 13v6c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-6s3.72-4.8 5.74-7.39c.51-.66.04-1.61-.79-1.61H5.04c-.83 0-1.3.95-.79 1.61z"/>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <div class="tournaments-list">
+        <h2 class="tournaments-list__title">Турниры лидерборда</h2>
+        
+        <div class="tournaments-grid">
+            <!-- Шапка таблицы -->
+            <div class="tournaments-grid__header tournaments-grid__row">
+                <div class="tournaments-grid__cell tournaments-grid__cell--date">Дата</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--name">Турнир</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--prize">Гарантия ($)</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--buyin">Бай-ин ($)</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--leaderboard">Лидерборд</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--details"></div>
+            </div>
+            
+            <!-- Строки с турнирами -->
+            <div class="tournaments-grid__row">
+                <div class="tournaments-grid__cell tournaments-grid__cell--date">15/мая/2024</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--name">Shark Party 10000</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--prize">10000</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--buyin">10</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--leaderboard">
+                    <a href="#" class="tournaments-grid__leaderboard-link">Ежедневный</a>
+                </div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--details">
+                    <a href="#" class="tournaments-grid__details-link">Подробнее</a>
+                </div>
+            </div>
+            
+            <div class="tournaments-grid__row">
+                <div class="tournaments-grid__cell tournaments-grid__cell--date">14/мая/2024</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--name">Shark Party 2000</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--prize">2000</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--buyin">1</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--leaderboard">
+                    <a href="#" class="tournaments-grid__leaderboard-link">Ежедневный</a>
+                </div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--details">
+                    <a href="#" class="tournaments-grid__details-link">Подробнее</a>
+                </div>
+            </div>
+            
+            <div class="tournaments-grid__row">
+                <div class="tournaments-grid__cell tournaments-grid__cell--date">12/мая/2024</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--name">Shark Party 5000</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--prize">5000</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--buyin">5</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--leaderboard">
+                    <a href="#" class="tournaments-grid__leaderboard-link">Недельный</a>
+                </div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--details">
+                    <a href="#" class="tournaments-grid__details-link">Подробнее</a>
+                </div>
+            </div>
+            
+            <div class="tournaments-grid__row">
+                <div class="tournaments-grid__cell tournaments-grid__cell--date">10/мая/2024</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--name">Shark Party 25000</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--prize">25000</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--buyin">27</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--leaderboard">
+                    <a href="#" class="tournaments-grid__leaderboard-link">Недельный</a>
+                </div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--details">
+                    <a href="#" class="tournaments-grid__details-link">Подробнее</a>
+                </div>
+            </div>
+            
+            <div class="tournaments-grid__row">
+                <div class="tournaments-grid__cell tournaments-grid__cell--date">08/мая/2024</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--name">Shark Party 1500</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--prize">1500</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--buyin">1</div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--leaderboard">
+                    <a href="#" class="tournaments-grid__leaderboard-link">Ежедневный</a>
+                </div>
+                <div class="tournaments-grid__cell tournaments-grid__cell--details">
+                    <a href="#" class="tournaments-grid__details-link">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pagination">
+            <a href="#" class="pagination__link" aria-label="Предыдущая страница">&laquo;</a>
+            <a href="#" class="pagination__link">1</a>
+            <a href="#" class="pagination__link pagination__link--active">2</a>
+            <a href="#" class="pagination__link">3</a>
+            <a href="#" class="pagination__link">4</a>
+            <a href="#" class="pagination__link" aria-label="Следующая страница">&raquo;</a>
+        </div>
+    </div>
+</section>
+
+<style>
+.tournaments-section {
+    margin-bottom: 40px;
+}
+
+.tournaments-filters {
+    background-color: var(--content-bg);
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px var(--shadow-color);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tournaments-filters__form {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tournaments-filters__label {
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.tournaments-filters__select {
+    padding: 8px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    background-color: var(--content-bg);
+    color: var(--text-color);
+    font-size: 0.95rem;
+    min-width: 180px;
+}
+
+.tournaments-filters__button {
+    padding: 8px 20px;
+    background-color: var(--accent-color);
+    color: var(--header-bg);
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tournaments-filters__button:hover {
+    background-color: var(--hover-color);
+}
+
+.tournaments-filters__button-icon {
+    display: none;
+}
+
+.tournaments-list__title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.tournaments-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 120px;
+    gap: 1px;
+    margin-bottom: 30px;
+    background-color: var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tournaments-grid__header {
+    font-weight: 500;
+    background-color: var(--header-bg);
+    color: var(--text-color);
+}
+
+.tournaments-grid__row {
+    display: contents;
+}
+
+.tournaments-grid__row:hover .tournaments-grid__cell {
+    background-color: var(--hover-bg);
+}
+
+.tournaments-grid__cell {
+    padding: 12px 15px;
+    background-color: var(--content-bg);
+    display: flex;
+    align-items: center;
+}
+
+.tournaments-grid__leaderboard-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.tournaments-grid__leaderboard-link:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+
+.tournaments-grid__details-link {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: var(--accent-color);
+    color: var(--header-bg);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+}
+
+.tournaments-grid__details-link:hover {
+    background-color: var(--hover-color);
+    text-decoration: none;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.pagination__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: var(--content-bg);
+    color: var(--text-color);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.pagination__link:hover {
+    background-color: var(--accent-color);
+    color: var(--header-bg);
+}
+
+.pagination__link--active {
+    background-color: var(--accent-color);
+    color: var(--header-bg);
+    font-weight: 500;
+}
+
+@media (min-width: 1025px) {
+    .tournaments-filters__form {
+        flex-wrap: nowrap;
+    }
+    
+    .tournaments-filters__button-text {
+        display: block;
+    }
+    
+    .tournaments-filters__select {
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .tournaments-grid {
+        grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 100px;
+    }
+}
+
+@media (max-width: 800px) {
+    .tournaments-filters__form {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+    
+    .tournaments-filters__button-text {
+        display: none;
+    }
+    
+    .tournaments-filters__button-icon {
+        display: block;
+    }
+    
+    .tournaments-grid {
+        grid-template-columns: 1fr;
+        background-color: transparent;
+        gap: 20px;
+    }
+    
+    .tournaments-grid__header {
+        display: none;
+    }
+    
+    .tournaments-grid__row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1px;
+        background-color: var(--border-color);
+        border-radius: 8px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .tournaments-grid__row:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 15px;
+        right: 15px;
+        height: 1px;
+        background-color: var(--accent-color);
+        opacity: 0.3;
+    }
+    
+    .tournaments-grid__cell {
+        grid-column: span 1;
+        padding: 10px 15px;
+    }
+    
+    .tournaments-grid__cell--date {
+        grid-column: 1;
+    }
+    
+    .tournaments-grid__cell--name {
+        grid-column: 2;
+    }
+    
+    .tournaments-grid__cell--prize {
+        grid-column: 1;
+    }
+    
+    .tournaments-grid__cell--buyin {
+        grid-column: 2;
+    }
+    
+    .tournaments-grid__cell--leaderboard {
+        grid-column: 1;
+    }
+    
+    .tournaments-grid__cell--details {
+        grid-column: 2;
+    }
+    
+    .tournaments-grid__cell::before {
+        content: attr(data-label);
+        font-weight: 500;
+        margin-right: 8px;
+        color: var(--text-muted);
+    }
+    
+    .tournaments-grid__cell[class*="--date"]::before {
+        content: "Дата:";
+    }
+    
+    .tournaments-grid__cell[class*="--name"]::before {
+        content: "Турнир:";
+    }
+    
+    .tournaments-grid__cell[class*="--prize"]::before {
+        content: "Призовые:";
+    }
+    
+    .tournaments-grid__cell[class*="--buyin"]::before {
+        content: "Бай-ин:";
+    }
+    
+    .tournaments-grid__cell[class*="--leaderboard"]::before {
+        content: "Лидерборд:";
+    }
+    
+    .tournaments-grid__cell[class*="--details"]::before {
+        content: "";
+    }
+}
+
+@media (max-width: 480px) {
+    .tournaments-grid__row {
+        grid-template-columns: 1fr;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .tournaments-grid__cell {
+        grid-column: 1 !important;
+    }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Автоматическое применение фильтров на десктопе
+    const filtersForm = document.querySelector('.tournaments-filters__form');
+    const isMobile = window.matchMedia('(max-width: 800px)').matches;
+    
+    if (!isMobile) {
+        const selects = filtersForm.querySelectorAll('.tournaments-filters__select');
+        selects.forEach(select => {
+            select.addEventListener('change', function() {
+                filtersForm.submit();
+                // Здесь должна быть логика фильтрации без перезагрузки страницы
+                console.log('Фильтры применены:', {
+                    status: filtersForm.elements.status.value,
+                    sort: filtersForm.elements.sort.value
+                });
+            });
+        });
+        
+        // Скрываем кнопку "Применить" на десктопе
+        const applyButton = filtersForm.querySelector('.tournaments-filters__button');
+        if (applyButton) {
+            applyButton.style.display = 'none';
+        }
+    }
+    
+    // Добавляем data-label для мобильных устройств
+    if (window.matchMedia('(max-width: 800px)').matches) {
+        const cells = document.querySelectorAll('.tournaments-grid__cell');
+        cells.forEach(cell => {
+            const label = cell.className.match(/--([a-z]+)/);
+            if (label) {
+                cell.setAttribute('data-label', label[1]);
+            }
+        });
+    }
+});
+</script>
