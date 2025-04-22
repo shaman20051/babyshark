@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru"><head>
+<html lang="ru">
+
+<head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Shark Party</title>
+	<title>Cool Header 2025 - BEM</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
-	<!-- <link href="theme/css/style.css" rel="stylesheet"> -->
-	
+	<link href="theme/css/style.css" rel="stylesheet">
+
 	<style>
 		:root {
 	--accent-color: #ffa726;
@@ -564,6 +566,180 @@ body.body--dark-theme .dropdown__theme-icon--moon {
 	/* background set per widget */
 }
 
+
+/*** from deepseek ***/
+
+	/* Hero Banner */
+	.hero {
+		background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1920x600') center/cover no-repeat;
+		color: white;
+		padding: 80px 20px;
+		text-align: center;
+		margin-bottom: 30px;
+}
+
+.hero__title {
+		font-size: 2.5rem;
+		margin-bottom: 20px;
+}
+
+.hero__description {
+		font-size: 1.2rem;
+		max-width: 800px;
+		margin: 0 auto 30px;
+}
+
+/* Blog Filters */
+.blog-filters {
+		background-color: var(--content-bg);
+		padding: 15px 20px;
+		margin-bottom: 30px;
+		border-radius: 8px;
+		box-shadow: 0 1px 3px var(--shadow-color);
+}
+
+.blog-filters__form {
+		display: flex;
+		gap: 15px;
+		align-items: center;
+		flex-wrap: wrap;
+}
+
+.blog-filters__label {
+		font-weight: 500;
+		color: var(--text-muted);
+}
+
+.blog-filters__select {
+		padding: 8px 12px;
+		border: 1px solid var(--border-color);
+		border-radius: 4px;
+		background-color: var(--content-bg);
+		color: var(--text-color);
+		font-size: 0.95rem;
+}
+
+.blog-filters__button {
+		padding: 8px 20px;
+		background-color: var(--accent-color);
+		color: var(--header-bg);
+		border-radius: 4px;
+		font-weight: 500;
+		transition: background-color 0.2s ease;
+}
+
+.blog-filters__button:hover {
+		background-color: var(--hover-color);
+}
+
+/* Articles Grid */
+.articles-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		gap: 30px;
+		margin-bottom: 40px;
+}
+
+.article-card {
+		background-color: var(--content-bg);
+		border-radius: 8px;
+		overflow: hidden;
+		box-shadow: 0 1px 4px var(--shadow-color);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-card:hover {
+		transform: translateY(-5px);
+		box-shadow: 0 5px 15px var(--shadow-strong-color);
+}
+
+.article-card__image {
+		width: 100%;
+		height: 200px;
+		object-fit: cover;
+}
+
+.article-card__content {
+		padding: 20px;
+}
+
+.article-card__title {
+		font-size: 1.3rem;
+		margin-bottom: 10px;
+}
+
+.article-card__title a {
+		color: var(--text-color);
+}
+
+.article-card__title a:hover {
+		color: var(--accent-color);
+}
+
+.article-card__meta {
+		color: var(--text-muted);
+		font-size: 0.85rem;
+		margin-bottom: 15px;
+}
+
+.article-card__excerpt {
+		margin-bottom: 15px;
+		font-size: 0.95rem;
+}
+
+.article-card__read-more {
+		display: inline-block;
+		padding: 8px 16px;
+		background-color: var(--accent-color);
+		color: var(--header-bg);
+		border-radius: 4px;
+		font-weight: 500;
+		transition: background-color 0.2s ease;
+}
+
+.article-card__read-more:hover {
+		background-color: var(--hover-color);
+		text-decoration: none;
+}
+
+
+        /* Pagination */
+        .pagination {
+					display: flex;
+					justify-content: center;
+					gap: 10px;
+					margin-top: 40px;
+			}
+
+			.pagination__link {
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					width: 40px;
+					height: 40px;
+					border-radius: 4px;
+					background-color: var(--content-bg);
+					color: var(--text-color);
+					transition: background-color 0.2s ease, color 0.2s ease;
+			}
+
+			.pagination__link:hover {
+					background-color: var(--accent-color);
+					color: var(--header-bg);
+			}
+
+			.pagination__link--active {
+					background-color: var(--accent-color);
+					color: var(--header-bg);
+					font-weight: 500;
+			}
+
+
+/*** END from deepseek ***/
+
+
+
+
 /* Article Styling */
 .article {}
 
@@ -944,359 +1120,915 @@ footer {
 	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 	</style>
-	
+
 </head>
+
 <body id="page-body">
 
 	<div class="page">
 
-			<header class="header">
-					<div class="header__grid">
+		<header class="header">
+			<div class="header__grid">
 
-							<a href="/" class="header__logo">
-									<img src="logo-hilo.png" alt="Site Logo">
-							</a>
+				<a href="/" class="header__logo">
+					<img src="logo-hilo.png" alt="Site Logo">
+				</a>
 
-							<nav class="menu" id="main-menu">
-									<ul class="menu__list">
-											<li class="menu__item"><a href="#home" class="menu__link">Главная</a></li>
-											<li class="menu__item"><a href="#blog" class="menu__link">Блог</a></li>
-											<li class="menu__item"><a href="#training" class="menu__link">Обучение</a></li>
-											<li class="menu__item"><a href="#tournaments" class="menu__link">Турниры</a></li>
-											<li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
-									</ul>
-							</nav>
+				<nav class="menu" id="main-menu">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="#home" class="menu__link">Главная</a></li>
+						<li class="menu__item"><a href="#blog" class="menu__link">Блог</a></li>
+						<li class="menu__item"><a href="#training" class="menu__link">Обучение</a></li>
+						<li class="menu__item"><a href="#tournaments" class="menu__link">Турниры</a></li>
+						<li class="menu__item"><a href="#contacts" class="menu__link">Контакты</a></li>
+					</ul>
+				</nav>
 
-							<div class="header__controls">
-									<div class="dropdown dropdown--language" id="lang-dropdown">
-											<button class="dropdown__toggle" aria-haspopup="true" aria-expanded="false" aria-controls="lang-options">
-													<svg class="dropdown__icon dropdown__icon--lang" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20px" height="20px">
-															<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1h-2v-2h2c.55 0 1-.45 1-1V8h1.11c.86 0 1.53-.66 1.64-1.5.16-.8-.3-1.5-1.04-1.5h-1.7c-.48 0-.88-.34-.98-.8C13.38 3.67 12.73 3 12 3c-.73 0-1.38.67-1.6 1.2-.1.46-.5.8-.98.8H7.7c-.74 0-1.39.7-1.23 1.5.11.84.78 1.5 1.64 1.5H9v1.5c0 .55.45 1 1 1h2v2H9c-.55 0-1 .45-1 1v3H7c-.9 0-1.64.58-1.9 1.39-.55 1.71.13 3.61 1.55 4.51 1.09.69 2.38 1.05 3.74 1.05s2.65-.36 3.74-1.05c1.42-.9 2.1-2.8 1.55-4.51z"></path>
-														</svg>
-													<span class="dropdown__text">RU</span>
-											</button>
-											<div class="dropdown__content" id="lang-options" role="menu">
-													<button class="dropdown__item dropdown__item--lang" role="menuitem" data-lang="en">English</button>
-													<button class="dropdown__item dropdown__item--lang" role="menuitem" data-lang="es">Español</button>
-													<button class="dropdown__item dropdown__item--lang dropdown__item--selected" role="menuitem" data-lang="ru">Русский</button>
+				<div class="header__controls">
+					<div class="dropdown dropdown--language" id="lang-dropdown">
+						<button class="dropdown__toggle" aria-haspopup="true" aria-expanded="false" aria-controls="lang-options">
+							<svg class="dropdown__icon dropdown__icon--lang" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+								fill="currentColor" width="20px" height="20px">
+								<path
+									d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1h-2v-2h2c.55 0 1-.45 1-1V8h1.11c.86 0 1.53-.66 1.64-1.5.16-.8-.3-1.5-1.04-1.5h-1.7c-.48 0-.88-.34-.98-.8C13.38 3.67 12.73 3 12 3c-.73 0-1.38.67-1.6 1.2-.1.46-.5.8-.98.8H7.7c-.74 0-1.39.7-1.23 1.5.11.84.78 1.5 1.64 1.5H9v1.5c0 .55.45 1 1 1h2v2H9c-.55 0-1 .45-1 1v3H7c-.9 0-1.64.58-1.9 1.39-.55 1.71.13 3.61 1.55 4.51 1.09.69 2.38 1.05 3.74 1.05s2.65-.36 3.74-1.05c1.42-.9 2.1-2.8 1.55-4.51z">
+								</path>
+							</svg>
+							<span class="dropdown__text">RU</span>
+						</button>
+						<div class="dropdown__content" id="lang-options" role="menu">
+							<button class="dropdown__item dropdown__item--lang" role="menuitem" data-lang="en">English</button>
+							<button class="dropdown__item dropdown__item--lang" role="menuitem" data-lang="es">Español</button>
+							<button class="dropdown__item dropdown__item--lang dropdown__item--selected" role="menuitem"
+								data-lang="ru">Русский</button>
+						</div>
+					</div>
+
+					<div class="dropdown dropdown--user" id="user-dropdown">
+						<button class="dropdown__toggle" aria-haspopup="false" aria-expanded="true" aria-controls="user-options">
+							<svg class="dropdown__icon dropdown__icon--user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+								fill="currentColor">
+								<path
+									d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z">
+								</path>
+							</svg>
+							<span></span>
+						</button>
+						<div class="dropdown__content" id="user-options" role="menu">
+							<a href="#login" class="dropdown__item" role="menuitem">Вход</a>
+							<a href="#register" class="dropdown__item" role="menuitem">Регистрация</a>
+							<div class="dropdown__separator"></div>
+							<button class="dropdown__item dropdown__item--theme-switcher" id="theme-toggle" role="menuitem"
+								aria-label="Переключить тему">
+								<span class="dropdown__theme-label">Светлая тема</span>
+								<svg class="dropdown__theme-icon dropdown__theme-icon--sun" xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24" fill="currentColor">
+									<path
+										d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM12 15c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3zm9-3h-2c-.55 0-1 .45-1 1s.45 1 1 1h2c.55 0 1-.45 1-1s-.45-1-1-1zm-1.68-5.82l-1.41 1.41c-.39.39-.39 1.02 0 1.41.2.2.45.29.71.29s.51-.1.71-.29l1.41-1.41c.39-.39.39-1.02 0-1.41-.39-.39-1.03-.39-1.42 0zM4 13H2c-.55 0-1-.45-1-1s.45-1 1-1h2c.55 0 1 .45 1 1s-.45 1-1 1zm1.41-7.22l1.41 1.41c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L6.83 5.78c-.39-.39-1.02-.39-1.41 0-.4.39-.4 1.02 0 1.41zm11.37 11.37l1.41 1.41c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41l-1.41-1.41c-.39-.39-1.02-.39-1.41 0-.4.39-.4 1.03 0 1.41zM12 5c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1v2c0 .55.45 1 1 1zm-7.78 1.41l-1.41-1.41c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l1.41 1.41c.2.2.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.02 0-1.41zM19 19c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1h2zm-7 2c.55 0 1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1v2c0 .55.45 1 1 1z">
+									</path>
+								</svg>
+								<svg class="dropdown__theme-icon dropdown__theme-icon--moon" xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24" fill="currentColor">
+									<path
+										d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.62-.11 2.37-.32-.3-.47-.48-.99-.53-1.52-.07-.78.19-1.53.69-2.12.5-.59 1.2-.98 1.96-1.15.91-.2 1.84.11 2.48.75.16-.36.3-.72.41-1.1.57-1.95.2-4.15-1.1-5.85C17.07 3.75 14.66 3 12 3zm-.2 3.57c1.1.13 2.09.67 2.83 1.45.7.74 1.11 1.7 1.17 2.75.05.8-.15 1.59-.53 2.28-.58 1.06-1.63 1.79-2.85 1.94-1.48.19-2.94-.43-3.84-1.6-1.03-1.33-.95-3.1.22-4.34.93-1 2.22-1.56 3.55-1.48z">
+									</path>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<button class="burger" id="burger-button" aria-label="Toggle menu" aria-expanded="false"
+					aria-controls="main-menu">
+					<div class="burger__icon">
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+						<span class="burger__line"></span>
+					</div>
+				</button>
+
+			</div>
+		</header>
+
+		<div id="content" class="content">
+			<main class="content__main">
+				<nav class="breadcrumbs" aria-label="breadcrumb">
+					<ol class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a href="/" class="breadcrumbs__link">Главная</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="/blog" class="breadcrumbs__link">Блог</a>
+						</li>
+						<li class="breadcrumbs__item breadcrumbs__item--current" aria-current="page">
+							Увлекательное Путешествие в Мир Веб-Дизайна 2025
+						</li>
+					</ol>
+				</nav>
+
+				<section class="hero">
+					<h1 class="hero__title">Блог о покере</h1>
+					<p class="hero__description">Последние новости, стратегии и советы от профессиональных игроков. Улучшайте свою
+						игру с нашими материалами.</p>
+				</section>
+
+				<!-- block Articles from d-s AI -->
+
+				<div class="blog-filters">
+					<form class="blog-filters__form">
+						<span class="blog-filters__label">Фильтровать по:</span>
+						<select class="blog-filters__select" name="category">
+							<option value="all">Все категории</option>
+							<option value="news">Новости</option>
+							<option value="strategies">Стратегии</option>
+							<option value="tournaments">Турниры</option>
+							<option value="reviews">Обзоры</option>
+						</select>
+						<select class="blog-filters__select" name="sort">
+							<option value="newest">Сначала новые</option>
+							<option value="oldest">Сначала старые</option>
+							<option value="popular">По популярности</option>
+						</select>
+						<button type="submit" class="blog-filters__button">Применить</button>
+					</form>
+				</div>
+
+				<div class="articles-grid">
+					<article class="article-card">
+						<img src="https://via.placeholder.com/600x400" alt="Покерный турнир" class="article-card__image">
+						<div class="article-card__content">
+							<h3 class="article-card__title"><a href="#">Как подготовиться к крупному турниру</a></h3>
+							<div class="article-card__meta">15 мая 2024 • Алексей Петров</div>
+							<p class="article-card__excerpt">Подробное руководство по подготовке к крупным покерным турнирам, включая
+								ментальную подготовку и стратегию игры.</p>
+							<a href="#" class="article-card__read-more">Читать далее</a>
+						</div>
+					</article>
+
+					<article class="article-card">
+						<img src="https://via.placeholder.com/600x400" alt="Блеф в покере" class="article-card__image">
+						<div class="article-card__content">
+							<h3 class="article-card__title"><a href="#">Искусство блефа в современном покере</a></h3>
+							<div class="article-card__meta">12 мая 2024 • Мария Иванова</div>
+							<p class="article-card__excerpt">Как правильно использовать блеф в современных покерных играх и когда от
+								него лучше воздержаться.</p>
+							<a href="#" class="article-card__read-more">Читать далее</a>
+						</div>
+					</article>
+
+					<article class="article-card">
+						<img src="https://via.placeholder.com/600x400" alt="Покерные руки" class="article-card__image">
+						<div class="article-card__content">
+							<h3 class="article-card__title"><a href="#">Топ-10 стартовых рук в Техасском Холдеме</a></h3>
+							<div class="article-card__meta">8 мая 2024 • Иван Сидоров</div>
+							<p class="article-card__excerpt">Рейтинг лучших стартовых рук и стратегии игры с ними в различных позициях
+								за столом.</p>
+							<a href="#" class="article-card__read-more">Читать далее</a>
+						</div>
+					</article>
+				</div>
+
+				<div class="pagination">
+					<a href="#" class="pagination__link">&laquo;</a>
+					<a href="#" class="pagination__link">1</a>
+					<a href="#" class="pagination__link pagination__link--active">2</a>
+					<a href="#" class="pagination__link">3</a>
+					<a href="#" class="pagination__link">4</a>
+					<a href="#" class="pagination__link">5</a>
+					<a href="#" class="pagination__link">&raquo;</a>
+				</div>
+
+				<!-- END block Articles from d-k AI -->
+
+
+				<article class="article">
+					<h1 class="article__title">Увлекательное Путешествие в Мир Веб-Дизайна 2025</h1>
+					<div class="article__meta">
+						<span class="article__author">Автор: Алексей Смирнов</span>
+						<time class="article__date" datetime="2024-05-17">17 Мая 2024</time>
+					</div>
+
+					<figure class="article__figure">
+						<img class="article__image" src="theme/images/bg1.jpg" alt="Абстрактное изображение веб-дизайна">
+					</figure>
+
+					<p class="article__summary">Погрузитесь в последние тенденции веб-дизайна, которые будут доминировать в 2025
+						году. От смелых цветовых палитр до интерактивных элементов и доступности — узнайте, как создавать сайты,
+						которые не только красивы, но и функциональны.</p>
+
+					<div class="article__section">
+						<h2>Ключевые Тренды и Списки</h2>
+						<p>Веб-дизайн постоянно развивается. Чтобы оставаться на волне, важно следить за новыми веяниями. Вот
+							некоторые из них:</p>
+						<ul>
+							<li>Минимализм с акцентами</li>
+							<li>Темная тема как стандарт</li>
+							<li>3D-элементы и анимация</li>
+							<li>Голосовой интерфейс (VUI)</li>
+						</ul>
+						<p>Приоритеты при разработке:</p>
+						<ol>
+							<li>Доступность (Accessibility)</li>
+							<li>Скорость загрузки (Performance)</li>
+							<li>Адаптивность (Responsiveness)</li>
+							<li>Пользовательский опыт (UX)</li>
+						</ol>
+						<blockquote>"Хороший дизайн — это как можно меньше дизайна." - Дитер Рамс (адаптировано)</blockquote>
+					</div>
+
+					<div class="article__section article__section--image-left">
+						<figure class="article__figure article__figure--inline-left">
+							<img class="article__image" src="theme/images/avto-ai-prom_950-655.jpg" alt="Изображение слева от текста">
+						</figure>
+						<div>
+							<h2>Фото слева: Интерактивность</h2>
+							<p>Интерактивные элементы делают сайт живым. Пользователи любят взаимодействовать с контентом. Это может
+								быть простая анимация при наведении или сложная 3D-сцена. Главное — не переусердствовать и помнить о
+								производительности. Такой подход увеличивает вовлеченность и время, проведенное на сайте.</p>
+							<p>Микровзаимодействия, такие как анимация кнопки при нажатии, добавляют ощущение завершенности и
+								качества.</p>
+						</div>
+					</div>
+
+					<div class="article__section article__section--image-right">
+						<figure class="article__figure article__figure--inline-right">
+							<img class="article__image" src="theme/images/avto-key.jpg" alt="Изображение справа от текста">
+						</figure>
+						<div>
+							<h2>Фото справа: Доступность превыше всего</h2>
+							<p>Создание доступных сайтов — это не просто тренд, а необходимость. Сайт должен быть удобен для всех
+								пользователей, включая людей с ограниченными возможностями. Используйте контрастные цвета, понятные
+								шрифты, добавляйте ARIA-атрибуты и альтернативный текст для изображений.</p>
+							<p>Тестирование с помощью скринридеров и проверка на соответствие стандартам WCAG помогут сделать ваш сайт
+								действительно инклюзивным.</p>
+						</div>
+					</div>
+
+					<div class="article__tags">
+						<a href="#" class="article__tag">Веб-дизайн</a>
+						<a href="#" class="article__tag">Тренды 2025</a>
+						<a href="#" class="article__tag">UX/UI</a>
+						<a href="#" class="article__tag">Доступность</a>
+					</div>
+				</article>
+
+				<section class="tournaments-section">
+					<div class="tournaments-filters">
+							<form class="tournaments-filters__form">
+									<span class="tournaments-filters__label">Фильтровать по:</span>
+									<select class="tournaments-filters__select" name="status" aria-label="Статус турнира">
+											<option value="all" selected>Все турниры</option>
+											<option value="finished">Законченные</option>
+											<option value="upcoming">Запланированные</option>
+									</select>
+									<select class="tournaments-filters__select" name="sort" aria-label="Сортировка">
+											<option value="newest" selected>Сначала новые</option>
+											<option value="oldest">Сначала старые</option>
+											<option value="popular">По популярности</option>
+											<option value="leaderboards">По лидербордам</option>
+									</select>
+									<button type="submit" class="tournaments-filters__button" aria-label="Применить фильтры">
+											<span class="tournaments-filters__button-text">Применить</span>
+											<svg class="tournaments-filters__button-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+													<path d="M4.25 5.61C6.27 8.2 10 13 10 13v6c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-6s3.72-4.8 5.74-7.39c.51-.66.04-1.61-.79-1.61H5.04c-.83 0-1.3.95-.79 1.61z"/>
+											</svg>
+									</button>
+							</form>
+					</div>
+			
+					<div class="tournaments-list">
+							<h2 class="tournaments-list__title">Турниры лидерборда</h2>
+							
+							<div class="tournaments-grid">
+									<!-- Шапка таблицы -->
+									<div class="tournaments-grid__header tournaments-grid__row">
+											<div class="tournaments-grid__cell tournaments-grid__cell--date">Дата</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--name">Турнир</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--prize">Гарантия ($)</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--buyin">Бай-ин ($)</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--leaderboard">Лидерборд</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--details"></div>
+									</div>
+									
+									<!-- Строки с турнирами -->
+									<div class="tournaments-grid__row">
+											<div class="tournaments-grid__cell tournaments-grid__cell--date">15/мая/2024</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--name">Shark Party 10000</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--prize">10000</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--buyin">10</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--leaderboard">
+													<a href="#" class="tournaments-grid__leaderboard-link">Ежедневный</a>
+											</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--details">
+													<a href="#" class="tournaments-grid__details-link">Подробнее</a>
 											</div>
 									</div>
-
-									<div class="dropdown dropdown--user" id="user-dropdown">
-											<button class="dropdown__toggle" aria-haspopup="false" aria-expanded="true" aria-controls="user-options">
-													 <svg class="dropdown__icon dropdown__icon--user" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"></path></svg>
-													 <span></span>
-											</button>
-											<div class="dropdown__content" id="user-options" role="menu">
-													<a href="#login" class="dropdown__item" role="menuitem">Вход</a>
-													<a href="#register" class="dropdown__item" role="menuitem">Регистрация</a>
-													<div class="dropdown__separator"></div>
-													<button class="dropdown__item dropdown__item--theme-switcher" id="theme-toggle" role="menuitem" aria-label="Переключить тему">
-															<span class="dropdown__theme-label">Светлая тема</span>
-															<svg class="dropdown__theme-icon dropdown__theme-icon--sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-																	<path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM12 15c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3zm9-3h-2c-.55 0-1 .45-1 1s.45 1 1 1h2c.55 0 1-.45 1-1s-.45-1-1-1zm-1.68-5.82l-1.41 1.41c-.39.39-.39 1.02 0 1.41.2.2.45.29.71.29s.51-.1.71-.29l1.41-1.41c.39-.39.39-1.02 0-1.41-.39-.39-1.03-.39-1.42 0zM4 13H2c-.55 0-1-.45-1-1s.45-1 1-1h2c.55 0 1 .45 1 1s-.45 1-1 1zm1.41-7.22l1.41 1.41c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L6.83 5.78c-.39-.39-1.02-.39-1.41 0-.4.39-.4 1.02 0 1.41zm11.37 11.37l1.41 1.41c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41l-1.41-1.41c-.39-.39-1.02-.39-1.41 0-.4.39-.4 1.03 0 1.41zM12 5c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1v2c0 .55.45 1 1 1zm-7.78 1.41l-1.41-1.41c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l1.41 1.41c.2.2.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.02 0-1.41zM19 19c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1h2zm-7 2c.55 0 1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1v2c0 .55.45 1 1 1z"></path>
-															</svg>
-															<svg class="dropdown__theme-icon dropdown__theme-icon--moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-																	<path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.62-.11 2.37-.32-.3-.47-.48-.99-.53-1.52-.07-.78.19-1.53.69-2.12.5-.59 1.2-.98 1.96-1.15.91-.2 1.84.11 2.48.75.16-.36.3-.72.41-1.1.57-1.95.2-4.15-1.1-5.85C17.07 3.75 14.66 3 12 3zm-.2 3.57c1.1.13 2.09.67 2.83 1.45.7.74 1.11 1.7 1.17 2.75.05.8-.15 1.59-.53 2.28-.58 1.06-1.63 1.79-2.85 1.94-1.48.19-2.94-.43-3.84-1.6-1.03-1.33-.95-3.1.22-4.34.93-1 2.22-1.56 3.55-1.48z"></path>
-															</svg>
-													</button>
+									
+									<div class="tournaments-grid__row">
+											<div class="tournaments-grid__cell tournaments-grid__cell--date">14/мая/2024</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--name">Shark Party 2000</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--prize">2000</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--buyin">1</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--leaderboard">
+													<a href="#" class="tournaments-grid__leaderboard-link">Ежедневный</a>
+											</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--details">
+													<a href="#" class="tournaments-grid__details-link">Подробнее</a>
+											</div>
+									</div>
+									
+									<div class="tournaments-grid__row">
+											<div class="tournaments-grid__cell tournaments-grid__cell--date">12/мая/2024</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--name">Shark Party 5000</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--prize">5000</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--buyin">5</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--leaderboard">
+													<a href="#" class="tournaments-grid__leaderboard-link">Недельный</a>
+											</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--details">
+													<a href="#" class="tournaments-grid__details-link">Подробнее</a>
+											</div>
+									</div>
+									
+									<div class="tournaments-grid__row">
+											<div class="tournaments-grid__cell tournaments-grid__cell--date">10/мая/2024</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--name">Shark Party 25000</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--prize">25000</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--buyin">27</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--leaderboard">
+													<a href="#" class="tournaments-grid__leaderboard-link">Недельный</a>
+											</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--details">
+													<a href="#" class="tournaments-grid__details-link">Подробнее</a>
+											</div>
+									</div>
+									
+									<div class="tournaments-grid__row">
+											<div class="tournaments-grid__cell tournaments-grid__cell--date">08/мая/2024</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--name">Shark Party 1500</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--prize">1500</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--buyin">1</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--leaderboard">
+													<a href="#" class="tournaments-grid__leaderboard-link">Ежедневный</a>
+											</div>
+											<div class="tournaments-grid__cell tournaments-grid__cell--details">
+													<a href="#" class="tournaments-grid__details-link">Подробнее</a>
 											</div>
 									</div>
 							</div>
-
-							<button class="burger" id="burger-button" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-menu">
-									 <div class="burger__icon">
-											 <span class="burger__line"></span>
-											 <span class="burger__line"></span>
-											 <span class="burger__line"></span>
-									 </div>
-							</button>
-
+							
+							<div class="pagination">
+									<a href="#" class="pagination__link" aria-label="Предыдущая страница">&laquo;</a>
+									<a href="#" class="pagination__link">1</a>
+									<a href="#" class="pagination__link pagination__link--active">2</a>
+									<a href="#" class="pagination__link">3</a>
+									<a href="#" class="pagination__link">4</a>
+									<a href="#" class="pagination__link" aria-label="Следующая страница">&raquo;</a>
+							</div>
 					</div>
-			</header>
+			</section>
+			
+			<style>
+			.tournaments-section {
+					margin-bottom: 40px;
+			}
+			
+			.tournaments-filters {
+					background-color: var(--content-bg);
+					padding: 15px 20px;
+					margin-bottom: 30px;
+					border-radius: 8px;
+					box-shadow: 0 1px 3px var(--shadow-color);
+					transition: background-color 0.3s ease, box-shadow 0.3s ease;
+			}
+			
+			.tournaments-filters__form {
+					display: flex;
+					gap: 15px;
+					align-items: center;
+					flex-wrap: wrap;
+			}
+			
+			.tournaments-filters__label {
+					font-weight: 500;
+					color: var(--text-muted);
+			}
+			
+			.tournaments-filters__select {
+					padding: 8px 12px;
+					border: 1px solid var(--border-color);
+					border-radius: 4px;
+					background-color: var(--content-bg);
+					color: var(--text-color);
+					font-size: 0.95rem;
+					min-width: 180px;
+			}
+			
+			.tournaments-filters__button {
+					padding: 8px 20px;
+					background-color: var(--accent-color);
+					color: var(--header-bg);
+					border-radius: 4px;
+					font-weight: 500;
+					transition: background-color 0.2s ease;
+					display: flex;
+					align-items: center;
+					gap: 8px;
+			}
+			
+			.tournaments-filters__button:hover {
+					background-color: var(--hover-color);
+			}
+			
+			.tournaments-filters__button-icon {
+					display: none;
+			}
+			
+			.tournaments-list__title {
+					font-size: 1.8rem;
+					margin-bottom: 20px;
+					color: var(--text-color);
+			}
+			
+			.tournaments-grid {
+					display: grid;
+					grid-template-columns: 1fr 2fr 1fr 1fr 1fr 120px;
+					gap: 1px;
+					margin-bottom: 30px;
+					background-color: var(--border-color);
+					border-radius: 8px;
+					overflow: hidden;
+			}
+			
+			.tournaments-grid__header {
+					font-weight: 500;
+					background-color: var(--header-bg);
+					color: var(--text-color);
+			}
+			
+			.tournaments-grid__row {
+					display: contents;
+			}
+			
+			.tournaments-grid__row:hover .tournaments-grid__cell {
+					background-color: var(--hover-bg);
+			}
+			
+			.tournaments-grid__cell {
+					padding: 12px 15px;
+					background-color: var(--content-bg);
+					display: flex;
+					align-items: center;
+			}
+			
+			.tournaments-grid__leaderboard-link {
+					color: var(--accent-color);
+					text-decoration: none;
+					transition: color 0.2s ease;
+			}
+			
+			.tournaments-grid__leaderboard-link:hover {
+					color: var(--hover-color);
+					text-decoration: underline;
+			}
+			
+			.tournaments-grid__details-link {
+					display: inline-block;
+					padding: 6px 12px;
+					background-color: var(--accent-color);
+					color: var(--header-bg);
+					border-radius: 4px;
+					font-weight: 500;
+					font-size: 0.9rem;
+					transition: background-color 0.2s ease;
+					text-decoration: none;
+			}
+			
+			.tournaments-grid__details-link:hover {
+					background-color: var(--hover-color);
+					text-decoration: none;
+			}
+			
+			.pagination {
+					display: flex;
+					justify-content: center;
+					gap: 10px;
+					margin-top: 30px;
+			}
+			
+			.pagination__link {
+					display: inline-flex;
+					align-items: center;
+					justify-content: center;
+					width: 40px;
+					height: 40px;
+					border-radius: 4px;
+					background-color: var(--content-bg);
+					color: var(--text-color);
+					transition: background-color 0.2s ease, color 0.2s ease;
+			}
+			
+			.pagination__link:hover {
+					background-color: var(--accent-color);
+					color: var(--header-bg);
+			}
+			
+			.pagination__link--active {
+					background-color: var(--accent-color);
+					color: var(--header-bg);
+					font-weight: 500;
+			}
+			
+			@media (min-width: 1025px) {
+					.tournaments-filters__form {
+							flex-wrap: nowrap;
+					}
+					
+					.tournaments-filters__button-text {
+							display: block;
+					}
+					
+					.tournaments-filters__select {
+							min-width: 200px;
+					}
+			}
+			
+			@media (max-width: 1024px) {
+					.tournaments-grid {
+							grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 100px;
+					}
+			}
+			
+			@media (max-width: 800px) {
+					.tournaments-filters__form {
+							flex-direction: column;
+							align-items: stretch;
+							gap: 10px;
+					}
+					
+					.tournaments-filters__button-text {
+							display: none;
+					}
+					
+					.tournaments-filters__button-icon {
+							display: block;
+					}
+					
+					.tournaments-grid {
+							grid-template-columns: 1fr;
+							background-color: transparent;
+							gap: 20px;
+					}
+					
+					.tournaments-grid__header {
+							display: none;
+					}
+					
+					.tournaments-grid__row {
+							display: grid;
+							grid-template-columns: 1fr 1fr;
+							gap: 1px;
+							background-color: var(--border-color);
+							border-radius: 8px;
+							overflow: hidden;
+							position: relative;
+							margin-bottom: 20px;
+							padding-bottom: 20px;
+					}
+					
+					.tournaments-grid__row:not(:last-child)::after {
+							content: '';
+							position: absolute;
+							bottom: 0;
+							left: 15px;
+							right: 15px;
+							height: 1px;
+							background-color: var(--accent-color);
+							opacity: 0.3;
+					}
+					
+					.tournaments-grid__cell {
+							grid-column: span 1;
+							padding: 10px 15px;
+					}
+					
+					.tournaments-grid__cell--date {
+							grid-column: 1;
+					}
+					
+					.tournaments-grid__cell--name {
+							grid-column: 2;
+					}
+					
+					.tournaments-grid__cell--prize {
+							grid-column: 1;
+					}
+					
+					.tournaments-grid__cell--buyin {
+							grid-column: 2;
+					}
+					
+					.tournaments-grid__cell--leaderboard {
+							grid-column: 1;
+					}
+					
+					.tournaments-grid__cell--details {
+							grid-column: 2;
+					}
+					
+					.tournaments-grid__cell::before {
+							content: attr(data-label);
+							font-weight: 500;
+							margin-right: 8px;
+							color: var(--text-muted);
+					}
+					
+					.tournaments-grid__cell[class*="--date"]::before {
+							content: "Дата:";
+					}
+					
+					.tournaments-grid__cell[class*="--name"]::before {
+							content: "Турнир:";
+					}
+					
+					.tournaments-grid__cell[class*="--prize"]::before {
+							content: "Призовые:";
+					}
+					
+					.tournaments-grid__cell[class*="--buyin"]::before {
+							content: "Бай-ин:";
+					}
+					
+					.tournaments-grid__cell[class*="--leaderboard"]::before {
+							content: "Лидерборд:";
+					}
+					
+					.tournaments-grid__cell[class*="--details"]::before {
+							content: "";
+					}
+			}
+			
+			@media (max-width: 480px) {
+					.tournaments-grid__row {
+							grid-template-columns: 1fr;
+							padding-bottom: 15px;
+							margin-bottom: 15px;
+					}
+					
+					.tournaments-grid__cell {
+							grid-column: 1 !important;
+					}
+			}
+			</style>
+			
+			<script>
+			document.addEventListener('DOMContentLoaded', function() {
+					// Автоматическое применение фильтров на десктопе
+					const filtersForm = document.querySelector('.tournaments-filters__form');
+					const isMobile = window.matchMedia('(max-width: 800px)').matches;
+					
+					if (!isMobile) {
+							const selects = filtersForm.querySelectorAll('.tournaments-filters__select');
+							selects.forEach(select => {
+									select.addEventListener('change', function() {
+											filtersForm.submit();
+											// Здесь должна быть логика фильтрации без перезагрузки страницы
+											console.log('Фильтры применены:', {
+													status: filtersForm.elements.status.value,
+													sort: filtersForm.elements.sort.value
+											});
+									});
+							});
+							
+							// Скрываем кнопку "Применить" на десктопе
+							const applyButton = filtersForm.querySelector('.tournaments-filters__button');
+							if (applyButton) {
+									applyButton.style.display = 'none';
+							}
+					}
+					
+					// Добавляем data-label для мобильных устройств
+					if (window.matchMedia('(max-width: 800px)').matches) {
+							const cells = document.querySelectorAll('.tournaments-grid__cell');
+							cells.forEach(cell => {
+									const label = cell.className.match(/--([a-z]+)/);
+									if (label) {
+											cell.setAttribute('data-label', label[1]);
+									}
+							});
+					}
+			});
+			</script>
+			
+			</main>
 
-			<div id="content" class="content">
-				<main class="content__main">
-						<nav class="breadcrumbs" aria-label="breadcrumb">
-								<ol class="breadcrumbs__list">
-										<li class="breadcrumbs__item">
-												<a href="/" class="breadcrumbs__link">Главная</a>
-										</li>
-										<li class="breadcrumbs__item">
-												<a href="/blog" class="breadcrumbs__link">Блог</a>
-										</li>
-										<li class="breadcrumbs__item breadcrumbs__item--current" aria-current="page">
-												Увлекательное Путешествие в Мир Веб-Дизайна 2025
-										</li>
-								</ol>
-						</nav>
+			<aside class="content__aside">
+				<div class="widget search-widget">
+					<h3 class="widget__title">Поиск по сайту</h3>
+					<form class="search-widget__form" action="/search" method="get">
+						<input type="search" class="search-widget__input" name="q" placeholder="Введите запрос..."
+							aria-label="Поиск по сайту">
+						<button type="submit" class="search-widget__button">Найти</button>
+					</form>
+				</div>
 
-						<article class="article">
-								<h1 class="article__title">Увлекательное Путешествие в Мир Веб-Дизайна 2025</h1>
-								<div class="article__meta">
-										<span class="article__author">Автор: Алексей Смирнов</span>
-										<time class="article__date" datetime="2024-05-17">17 Мая 2024</time>
-								</div>
-
-								<figure class="article__figure">
-										<img class="article__image" src="theme/images/bg1.jpg" alt="Абстрактное изображение веб-дизайна">
-								</figure>
-
-								<p class="article__summary">Погрузитесь в последние тенденции веб-дизайна, которые будут доминировать в 2025 году. От смелых цветовых палитр до интерактивных элементов и доступности — узнайте, как создавать сайты, которые не только красивы, но и функциональны.</p>
-
-								<div class="article__section">
-										<h2>Ключевые Тренды и Списки</h2>
-										<p>Веб-дизайн постоянно развивается. Чтобы оставаться на волне, важно следить за новыми веяниями. Вот некоторые из них:</p>
-										<ul>
-												<li>Минимализм с акцентами</li>
-												<li>Темная тема как стандарт</li>
-												<li>3D-элементы и анимация</li>
-												<li>Голосовой интерфейс (VUI)</li>
-										</ul>
-										<p>Приоритеты при разработке:</p>
-										<ol>
-												<li>Доступность (Accessibility)</li>
-												<li>Скорость загрузки (Performance)</li>
-												<li>Адаптивность (Responsiveness)</li>
-												<li>Пользовательский опыт (UX)</li>
-										</ol>
-										<blockquote>"Хороший дизайн — это как можно меньше дизайна." - Дитер Рамс (адаптировано)</blockquote>
-								</div>
-
-								<div class="article__section article__section--image-left">
-										<figure class="article__figure article__figure--inline-left">
-												<img class="article__image" src="theme/images/avto-ai-prom_950-655.jpg" alt="Изображение слева от текста">
-										</figure>
-										<div>
-												 <h2>Фото слева: Интерактивность</h2>
-												 <p>Интерактивные элементы делают сайт живым. Пользователи любят взаимодействовать с контентом. Это может быть простая анимация при наведении или сложная 3D-сцена. Главное — не переусердствовать и помнить о производительности. Такой подход увеличивает вовлеченность и время, проведенное на сайте.</p>
-												 <p>Микровзаимодействия, такие как анимация кнопки при нажатии, добавляют ощущение завершенности и качества.</p>
-										</div>
-								</div>
-
-								<div class="article__section article__section--image-right">
-										 <figure class="article__figure article__figure--inline-right">
-												<img class="article__image" src="theme/images/avto-key.jpg" alt="Изображение справа от текста">
-										</figure>
-										<div>
-												<h2>Фото справа: Доступность превыше всего</h2>
-												<p>Создание доступных сайтов — это не просто тренд, а необходимость. Сайт должен быть удобен для всех пользователей, включая людей с ограниченными возможностями. Используйте контрастные цвета, понятные шрифты, добавляйте ARIA-атрибуты и альтернативный текст для изображений.</p>
-												<p>Тестирование с помощью скринридеров и проверка на соответствие стандартам WCAG помогут сделать ваш сайт действительно инклюзивным.</p>
-										</div>
-								</div>
-
-								<div class="article__tags">
-										<a href="#" class="article__tag">Веб-дизайн</a>
-										<a href="#" class="article__tag">Тренды 2025</a>
-										<a href="#" class="article__tag">UX/UI</a>
-										<a href="#" class="article__tag">Доступность</a>
-								</div>
-						</article>
-				</main>
-
-				<aside class="content__aside">
-						<div class="widget search-widget">
-								<h3 class="widget__title">Поиск по сайту</h3>
-								<form class="search-widget__form" action="/search" method="get">
-										<input type="search" class="search-widget__input" name="q" placeholder="Введите запрос..." aria-label="Поиск по сайту">
-										<button type="submit" class="search-widget__button">Найти</button>
-								</form>
+				<div class="widget announcements-widget">
+					<h3 class="widget__title">Свежие Стать!!</h3>
+					<article class="announcement-item">
+						<div class="announcement-item__img">
+							<img src="theme/images/gayki.png" alt="">
 						</div>
-
-						<div class="widget announcements-widget">
-								<h3 class="widget__title">Свежие Стать!!</h3>
-								<article class="announcement-item">
-									<div class="announcement-item__img">
-										<img src="theme/images/gayki.png" alt="">
-									</div>
-										<h4 class="announcement-item__title"><a href="#">Оптимизация Скорости Загрузки</a></h4>
-										<div class="announcement-item__meta">
-												<span class="announcement-item__author">Мария Иванова</span> -
-												<time datetime="2024-05-16">16 Мая 2024</time>
-										</div>
-										<p class="announcement-item__summary">Узнайте, как ускорить ваш сайт и улучшить пользовательский опыт...</p>
-								</article>
-								<article class="announcement-item">
-									<div class="announcement-item__img">
-										<img src="theme/images/stanok.png" alt="">
-									</div>
-										<h4 class="announcement-item__title"><a href="#">Сила Типографики в Вебе</a></h4>
-										<div class="announcement-item__meta">
-												<span class="announcement-item__author">Петр Васильев</span> -
-												<time datetime="2024-05-15">15 Мая 2024</time>
-										</div>
-										<p class="announcement-item__summary">Правильный выбор шрифтов может кардинально изменить восприятие сайта...</p>
-								</article>
-								<article class="announcement-item">
-										 <h4 class="announcement-item__title"><a href="#">Будущее CSS: Новые Возможности</a></h4>
-										<div class="announcement-item__meta">
-												<span class="announcement-item__author">Елена Кузнецова</span> -
-												<time datetime="2024-05-14">14 Мая 2024</time>
-										</div>
-										<p class="announcement-item__summary">Обзор новых CSS-свойств и техник, которые скоро станут стандартом...</p>
-								</article>
+						<h4 class="announcement-item__title"><a href="#">Оптимизация Скорости Загрузки</a></h4>
+						<div class="announcement-item__meta">
+							<span class="announcement-item__author">Мария Иванова</span> -
+							<time datetime="2024-05-16">16 Мая 2024</time>
 						</div>
-				</aside>
+						<p class="announcement-item__summary">Узнайте, как ускорить ваш сайт и улучшить пользовательский опыт...</p>
+					</article>
+					<article class="announcement-item">
+						<div class="announcement-item__img">
+							<img src="theme/images/stanok.png" alt="">
+						</div>
+						<h4 class="announcement-item__title"><a href="#">Сила Типографики в Вебе</a></h4>
+						<div class="announcement-item__meta">
+							<span class="announcement-item__author">Петр Васильев</span> -
+							<time datetime="2024-05-15">15 Мая 2024</time>
+						</div>
+						<p class="announcement-item__summary">Правильный выбор шрифтов может кардинально изменить восприятие
+							сайта...</p>
+					</article>
+					<article class="announcement-item">
+						<h4 class="announcement-item__title"><a href="#">Будущее CSS: Новые Возможности</a></h4>
+						<div class="announcement-item__meta">
+							<span class="announcement-item__author">Елена Кузнецова</span> -
+							<time datetime="2024-05-14">14 Мая 2024</time>
+						</div>
+						<p class="announcement-item__summary">Обзор новых CSS-свойств и техник, которые скоро станут стандартом...
+						</p>
+					</article>
+				</div>
+			</aside>
 		</div>
 
-			<footer>
-					<p>© 2024 Your Website Name. All rights reserved.</p>
-			</footer>
+		<footer>
+			<p>© 2024 Your Website Name. All rights reserved.</p>
+		</footer>
 
 	</div>
 
 	<script defer="">
-			document.addEventListener('DOMContentLoaded', () => {
-					const burgerButton = document.getElementById('burger-button'); // Keep ID for JS hook
-					const mainMenu = document.getElementById('main-menu'); // Keep ID for JS hook
-					const dropdownToggles = document.querySelectorAll('.dropdown__toggle');
-					const langDropdown = document.getElementById('lang-dropdown'); // Keep ID for JS hook
-					const langToggleText = langDropdown?.querySelector('.dropdown__text');
-					const langOptions = langDropdown?.querySelectorAll('.dropdown__item--lang');
-					const themeToggleButton = document.getElementById('theme-toggle'); // Keep ID for JS hook
-					const themeLabel = themeToggleButton?.querySelector('.dropdown__theme-label');
-					const body = document.getElementById('page-body'); // Use ID on body for easier selection
-					const currentThemeDisplay = document.getElementById('current-theme-display');
+		document.addEventListener('DOMContentLoaded', () => {
+			const burgerButton = document.getElementById('burger-button'); // Keep ID for JS hook
+			const mainMenu = document.getElementById('main-menu'); // Keep ID for JS hook
+			const dropdownToggles = document.querySelectorAll('.dropdown__toggle');
+			const langDropdown = document.getElementById('lang-dropdown'); // Keep ID for JS hook
+			const langToggleText = langDropdown?.querySelector('.dropdown__text');
+			const langOptions = langDropdown?.querySelectorAll('.dropdown__item--lang');
+			const themeToggleButton = document.getElementById('theme-toggle'); // Keep ID for JS hook
+			const themeLabel = themeToggleButton?.querySelector('.dropdown__theme-label');
+			const body = document.getElementById('page-body'); // Use ID on body for easier selection
+			const currentThemeDisplay = document.getElementById('current-theme-display');
 
-					const THEME_KEY = 'user-theme-preference';
-					const ACTIVE_MENU_MOD = 'menu--active';
-					const ACTIVE_BURGER_MOD = 'burger--active';
-					const ACTIVE_DROPDOWN_MOD = 'dropdown--active';
-					const DARK_THEME_MOD = 'body--dark-theme';
-					const SELECTED_ITEM_MOD = 'dropdown__item--selected';
+			const THEME_KEY = 'user-theme-preference';
+			const ACTIVE_MENU_MOD = 'menu--active';
+			const ACTIVE_BURGER_MOD = 'burger--active';
+			const ACTIVE_DROPDOWN_MOD = 'dropdown--active';
+			const DARK_THEME_MOD = 'body--dark-theme';
+			const SELECTED_ITEM_MOD = 'dropdown__item--selected';
 
 
-					// Mobile Menu Toggle
-					if (burgerButton && mainMenu) {
-							burgerButton.addEventListener('click', () => {
-									const isActive = mainMenu.classList.contains(ACTIVE_MENU_MOD);
-									mainMenu.classList.toggle(ACTIVE_MENU_MOD);
-									burgerButton.classList.toggle(ACTIVE_BURGER_MOD);
-									burgerButton.setAttribute('aria-expanded', String(!isActive));
-									body.style.overflow = mainMenu.classList.contains(ACTIVE_MENU_MOD) ? 'hidden' : '';
-							});
+			// Mobile Menu Toggle
+			if (burgerButton && mainMenu) {
+				burgerButton.addEventListener('click', () => {
+					const isActive = mainMenu.classList.contains(ACTIVE_MENU_MOD);
+					mainMenu.classList.toggle(ACTIVE_MENU_MOD);
+					burgerButton.classList.toggle(ACTIVE_BURGER_MOD);
+					burgerButton.setAttribute('aria-expanded', String(!isActive));
+					body.style.overflow = mainMenu.classList.contains(ACTIVE_MENU_MOD) ? 'hidden' : '';
+				});
 
-							// Close menu if a link inside it is clicked
-							mainMenu.querySelectorAll('.menu__link').forEach(link => {
-									link.addEventListener('click', () => {
-											 if (mainMenu.classList.contains(ACTIVE_MENU_MOD)) {
-													 mainMenu.classList.remove(ACTIVE_MENU_MOD);
-													 burgerButton.classList.remove(ACTIVE_BURGER_MOD);
-													 burgerButton.setAttribute('aria-expanded', 'false');
-													 body.style.overflow = '';
-											 }
-									});
-							});
+				// Close menu if a link inside it is clicked
+				mainMenu.querySelectorAll('.menu__link').forEach(link => {
+					link.addEventListener('click', () => {
+						if (mainMenu.classList.contains(ACTIVE_MENU_MOD)) {
+							mainMenu.classList.remove(ACTIVE_MENU_MOD);
+							burgerButton.classList.remove(ACTIVE_BURGER_MOD);
+							burgerButton.setAttribute('aria-expanded', 'false');
+							body.style.overflow = '';
+						}
+					});
+				});
+			}
+
+			// Dropdown Toggle
+			dropdownToggles.forEach(toggle => {
+				toggle.addEventListener('click', (event) => {
+					event.stopPropagation();
+					const dropdown = toggle.closest('.dropdown');
+					if (!dropdown) return;
+					const currentlyActive = dropdown.classList.contains(ACTIVE_DROPDOWN_MOD);
+
+					// If the click is on the theme switcher itself, don't close dropdowns
+					if (event.target.closest('.dropdown__item--theme-switcher')) {
+						// Theme switch logic handles its own state
+					} else {
+						closeAllDropdowns(); // Close others first
+						if (!currentlyActive) {
+							dropdown.classList.add(ACTIVE_DROPDOWN_MOD);
+							toggle.setAttribute('aria-expanded', 'true');
+						}
+						// Clicking toggle again will close it via closeAllDropdowns or click outside
 					}
-
-					// Dropdown Toggle
-					dropdownToggles.forEach(toggle => {
-							toggle.addEventListener('click', (event) => {
-									event.stopPropagation();
-									const dropdown = toggle.closest('.dropdown');
-									if (!dropdown) return;
-									const currentlyActive = dropdown.classList.contains(ACTIVE_DROPDOWN_MOD);
-
-									 // If the click is on the theme switcher itself, don't close dropdowns
-									 if (event.target.closest('.dropdown__item--theme-switcher')) {
-											 // Theme switch logic handles its own state
-									 } else {
-											 closeAllDropdowns(); // Close others first
-											 if (!currentlyActive) {
-													 dropdown.classList.add(ACTIVE_DROPDOWN_MOD);
-													 toggle.setAttribute('aria-expanded', 'true');
-											 }
-											 // Clicking toggle again will close it via closeAllDropdowns or click outside
-									 }
-							});
-					});
-
-					// Close dropdowns when clicking outside
-					document.addEventListener('click', (event) => {
-							 if (!event.target.closest('.dropdown')) {
-									 closeAllDropdowns();
-							 }
-					});
-
-					function closeAllDropdowns(exceptDropdown = null) {
-							 document.querySelectorAll('.dropdown.' + ACTIVE_DROPDOWN_MOD).forEach(activeDropdown => {
-									 if (activeDropdown !== exceptDropdown) {
-											activeDropdown.classList.remove(ACTIVE_DROPDOWN_MOD);
-											 const activeToggle = activeDropdown.querySelector('.dropdown__toggle');
-											 if (activeToggle) {
-													 activeToggle.setAttribute('aria-expanded', 'false');
-											 }
-									 }
-							 });
-					}
-
-					// Language selection logic
-					 if (langToggleText && langOptions) {
-							 langOptions.forEach(button => {
-									 button.addEventListener('click', (event) => {
-											 event.stopPropagation();
-											 const selectedLangCode = button.getAttribute('data-lang');
-											 const selectedLangText = button.textContent;
-
-											 if (langToggleText) {
-													langToggleText.textContent = selectedLangCode.toUpperCase();
-											 }
-
-											 langOptions.forEach(btn => btn.classList.remove(SELECTED_ITEM_MOD));
-											 button.classList.add(SELECTED_ITEM_MOD);
-
-											 console.log(`Language changed to: ${selectedLangText} (${selectedLangCode})`);
-
-											 closeAllDropdowns();
-									 });
-							 });
-					 }
-
-					// Theme Switching Logic
-					const applyTheme = (theme) => {
-							if (theme === 'dark') {
-									body.classList.add(DARK_THEME_MOD);
-									if (themeLabel) themeLabel.textContent = 'Темная тема';
-									if (currentThemeDisplay) currentThemeDisplay.textContent = 'Dark';
-							} else {
-									body.classList.remove(DARK_THEME_MOD);
-									if (themeLabel) themeLabel.textContent = 'Светлая тема';
-									if (currentThemeDisplay) currentThemeDisplay.textContent = 'Light';
-							}
-							 // Icon visibility is handled by CSS based on body class now
-					};
-
-					const toggleTheme = () => {
-							const currentThemeIsDark = body.classList.contains(DARK_THEME_MOD);
-							const newTheme = currentThemeIsDark ? 'light' : 'dark';
-							applyTheme(newTheme);
-							localStorage.setItem(THEME_KEY, newTheme);
-					};
-
-					 if (themeToggleButton) {
-							 themeToggleButton.addEventListener('click', (event) => {
-									 event.stopPropagation();
-									 toggleTheme();
-									 // Decide if dropdown should remain open or close after theme switch
-									 // closeAllDropdowns(); // Uncomment to close dropdown after switch
-							 });
-					 }
-
-					 // Load saved theme on page load
-					 const savedTheme = localStorage.getItem(THEME_KEY);
-					 const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-					 const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
-					 applyTheme(initialTheme);
-
-					// Close dropdown when regular items (links) inside are clicked
-					document.querySelectorAll('a.dropdown__item').forEach(item => {
-							item.addEventListener('click', () => {
-									closeAllDropdowns();
-							});
-					});
-
+				});
 			});
+
+			// Close dropdowns when clicking outside
+			document.addEventListener('click', (event) => {
+				if (!event.target.closest('.dropdown')) {
+					closeAllDropdowns();
+				}
+			});
+
+			function closeAllDropdowns(exceptDropdown = null) {
+				document.querySelectorAll('.dropdown.' + ACTIVE_DROPDOWN_MOD).forEach(activeDropdown => {
+					if (activeDropdown !== exceptDropdown) {
+						activeDropdown.classList.remove(ACTIVE_DROPDOWN_MOD);
+						const activeToggle = activeDropdown.querySelector('.dropdown__toggle');
+						if (activeToggle) {
+							activeToggle.setAttribute('aria-expanded', 'false');
+						}
+					}
+				});
+			}
+
+			// Language selection logic
+			if (langToggleText && langOptions) {
+				langOptions.forEach(button => {
+					button.addEventListener('click', (event) => {
+						event.stopPropagation();
+						const selectedLangCode = button.getAttribute('data-lang');
+						const selectedLangText = button.textContent;
+
+						if (langToggleText) {
+							langToggleText.textContent = selectedLangCode.toUpperCase();
+						}
+
+						langOptions.forEach(btn => btn.classList.remove(SELECTED_ITEM_MOD));
+						button.classList.add(SELECTED_ITEM_MOD);
+
+						console.log(`Language changed to: ${selectedLangText} (${selectedLangCode})`);
+
+						closeAllDropdowns();
+					});
+				});
+			}
+
+			// Theme Switching Logic
+			const applyTheme = (theme) => {
+				if (theme === 'dark') {
+					body.classList.add(DARK_THEME_MOD);
+					if (themeLabel) themeLabel.textContent = 'Темная тема';
+					if (currentThemeDisplay) currentThemeDisplay.textContent = 'Dark';
+				} else {
+					body.classList.remove(DARK_THEME_MOD);
+					if (themeLabel) themeLabel.textContent = 'Светлая тема';
+					if (currentThemeDisplay) currentThemeDisplay.textContent = 'Light';
+				}
+				// Icon visibility is handled by CSS based on body class now
+			};
+
+			const toggleTheme = () => {
+				const currentThemeIsDark = body.classList.contains(DARK_THEME_MOD);
+				const newTheme = currentThemeIsDark ? 'light' : 'dark';
+				applyTheme(newTheme);
+				localStorage.setItem(THEME_KEY, newTheme);
+			};
+
+			if (themeToggleButton) {
+				themeToggleButton.addEventListener('click', (event) => {
+					event.stopPropagation();
+					toggleTheme();
+					// Decide if dropdown should remain open or close after theme switch
+					// closeAllDropdowns(); // Uncomment to close dropdown after switch
+				});
+			}
+
+			// Load saved theme on page load
+			const savedTheme = localStorage.getItem(THEME_KEY);
+			const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+			applyTheme(initialTheme);
+
+			// Close dropdown when regular items (links) inside are clicked
+			document.querySelectorAll('a.dropdown__item').forEach(item => {
+				item.addEventListener('click', () => {
+					closeAllDropdowns();
+				});
+			});
+
+		});
 	</script>
 
 
-</body></html>
+</body>
+
+</html>
