@@ -1439,6 +1439,7 @@ footer {
                 </div>
                 <div class="tournaments-grid__cell tournaments-grid__cell--leaderboard">
                     <a href="#" class="tournaments-grid__leaderboard-link">Ежедневный</a>
+                    <a href="#" class="tournaments-grid__leaderboard-link">Именной</a>
                 </div>
                 <div class="tournaments-grid__cell tournaments-grid__cell--details">
                     <a href="#" class="tournaments-grid__details-link">Подробнее</a>
@@ -1595,6 +1596,7 @@ footer {
     padding: 12px 15px;
     background-color: var(--content-bg);
     display: flex;
+		flex-direction: column;
     align-items: center;
 }
 
@@ -1951,7 +1953,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
                 
                 <!-- Детализация по турнирам игрока (скрыта по умолчанию) -->
-                <div class="leaderboard-grid__row leaderboard-grid__row--tournaments" id="player-1-tournaments" hidden>
+                <div class="leaderboard-grid__row leaderboard-grid__row--tournaments" id="player-1-tournaments" style="display: none;" hidden>
                     <div class="leaderboard-grid__cell leaderboard-grid__cell--full" colspan="4">
                         <div class="player-tournaments">
                             <div class="player-tournaments__header player-tournaments__row">
@@ -1995,7 +1997,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 </div>
                 
-                <div class="leaderboard-grid__row leaderboard-grid__row--tournaments" id="player-2-tournaments" hidden>
+                <div class="leaderboard-grid__row leaderboard-grid__row--tournaments" id="player-2-tournaments" style="display: none;" hidden>
                     <div class="leaderboard-grid__cell leaderboard-grid__cell--full" colspan="4">
                         <div class="player-tournaments">
                             <div class="player-tournaments__header player-tournaments__row">
