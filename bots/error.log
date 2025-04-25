@@ -16,3 +16,9 @@
     [error_code] => 404
     [description] => Not Found
 )
+Ошибка или нет данных: Array
+(
+    [ok] => 
+    [error_code] => 404
+    [description] => Not Found
+)

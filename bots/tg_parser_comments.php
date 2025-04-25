@@ -3,7 +3,7 @@
 define('BOT_TOKEN', '7337016333:AAHh_MoIJ9mwBE39k4Pggz8eQScG3-l5UgA');
 // define('CHANNEL', '@babyshark4'); // или ID канала
 // define('CHANNEL', '@sharkparty1kk'); // или ID канала
-define('CHANNEL', '-1001264975707'); // или ID канала
+define('CHANNEL', '-1001264975707'); //  hilo или ID канала
 define('POST_ID', 13);
 define('OUTPUT_FILE', 'comments.txt');
 

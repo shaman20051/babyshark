@@ -4,9 +4,9 @@ $bot_id = '7337016333'; // Полученный ID
 // $channel = '@babyshark4';
 // $channel_id = '-1001103182277'; // @babyshark4 Используем числовой ID из getChat
 
-// https://t.me/sharkparty1kk/209 
-$channel = '-1001264975707';
-$channel_id = '-1001264975707';
+// https://t.me/sharkparty1kk/209
+// $channel = '@sharkparty1kk';
+$channel_id = '-1002654363165';
 
 
 // Альтернативный способ проверки через getChat
