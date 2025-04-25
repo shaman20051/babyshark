@@ -58,9 +58,7 @@ class App
 
         // Шаг 1: Регистрируем канал
         try {
-            $channelInfo = $this->madeline->channels->getChannels([
-                'id' => [['_' => 'inputChannel', 'channel_id' => (int)str_replace('-100', '', $this->channelUsername)]]
-            ]);
+            $channelInfo = $this->madeline->getInfo($this->channelUsername);
             echo "Результат регистрации канала: " . print_r($channelInfo, true) . "\n";
         } catch (\Exception $e) {
             echo "Ошибка при регистрации канала: " . $e->getMessage() . "\n";
