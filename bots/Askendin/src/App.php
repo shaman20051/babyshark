@@ -58,7 +58,7 @@ class App
 
         // Шаг 1: Регистрируем канал
         try {
-            $channelInfo = $this->madeline->getPwrChat($this->channelUsername);
+            $channelInfo = $this->madeline->getFullInfo($this->channelUsername);
             echo "Результат регистрации канала: " . print_r($channelInfo, true) . "\n";
         } catch (\Exception $e) {
             echo "Ошибка при регистрации канала: " . $e->getMessage() . "\n";
