@@ -78,20 +78,19 @@ class App
             echo "Группа обсуждений: -{$groupId}, ID сообщения поста в группе: {$discussionMessageId}\n";
             echo "Информация о группе: " . print_r($discussion['chats'][0], true) . "\n";
 
-            // Шаг 2: Формируем peer для группы
-            $peer = "-{$groupId}"; // Используем строковый формат peer
-            if (isset($discussion['chats'][0]['access_hash'])) {
-                $peer = [
-                    '_' => 'inputPeerChannel',
-                    'channel_id' => $groupId,
-                    'access_hash' => $discussion['chats'][0]['access_hash']
-                ];
+            // Проверяем, покинул ли аккаунт группу
+            if (isset($discussion['chats'][0]['left']) && $discussion['chats'][0]['left']) {
+                echo "Ошибка: Аккаунт покинул группу обсуждений. Пожалуйста, присоединитесь к группе.\n";
+                return;
             }
+
+            // Шаг 2: Получаем корректный peer
+            $peer = $this->madeline->getPeer("-{$groupId}");
 
             // Шаг 3: Получаем историю сообщений из группы обсуждений
             $messages = $this->madeline->messages->getHistory([
                 'peer' => $peer,
-                'limit' => 100,
+                'limit' => 200,
                 'offset_id' => 0,
                 'max_id' => 0,
                 'min_id' => 0,
@@ -101,6 +100,7 @@ class App
 
             // Шаг 4: Фильтруем сообщения, которые являются комментариями
             foreach ($messages['messages'] as $message) {
+                echo "Сообщение ID {$message['id']}, reply_to: " . print_r($message['reply_to'] ?? null, true) . "\n";
                 if (isset($message['reply_to']) &&
                     isset($message['reply_to']['reply_to_msg_id']) &&
                     $message['reply_to']['reply_to_msg_id'] == $discussionMessageId &&
