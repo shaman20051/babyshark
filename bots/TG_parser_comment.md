@@ -220,3 +220,17 @@ if ($argc > 1) {
     define('POST_ID', $argv[2]);
 }
 Для приватных каналов не забудьте добавить бота как администратора!
+
+
+*** Как получить  ID бота:
+Откройте в браузере (подставив свой токен):
+
+https://api.telegram.org/bot7337016333:AAHh_MoIJ9mwBE39k4Pggz8eQScG3-l5UgA/getMe
+Ответ будет содержать ID:
+
+ВАШ_ТОКЕН - 7337016333:AAHh_MoIJ9mwBE39k4Pggz8eQScG3-l5UgA
+"id":7337016333
+
+{"ok":true,"result":{
+	"id":7337016333,
+	"is_bot":true,"first_name":"BShParsComm","username":"BShParsComm_bot","can_join_groups":true,"can_read_all_group_messages":false,"supports_inline_queries":false,"can_connect_to_business":false,"has_main_web_app":false}}
