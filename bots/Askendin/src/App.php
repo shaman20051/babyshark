@@ -84,10 +84,19 @@ class App
                 return;
             }
 
-            // Шаг 2: Получаем корректный peer
-            $peer = $this->madeline->getPeer("-{$groupId}");
+            // Шаг 2: Регистрируем peer
+            try {
+                $this->madeline->channels->getChannels([
+                    'id' => [['_' => 'inputChannel', 'channel_id' => $groupId]]
+                ]);
+                echo "Группа успешно зарегистрирована в базе MadelineProto.\n";
+            } catch (\Exception $e) {
+                echo "Ошибка при регистрации группы: " . $e->getMessage() . "\n";
+                return;
+            }
 
             // Шаг 3: Получаем историю сообщений из группы обсуждений
+            $peer = "-{$groupId}";
             $messages = $this->madeline->messages->getHistory([
                 'peer' => $peer,
                 'limit' => 200,
