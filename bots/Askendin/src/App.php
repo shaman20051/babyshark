@@ -52,53 +52,67 @@ class App
     {
         $comments = [];
 
-        // Получаем информацию о посте и связанной группе обсуждений
-        $discussion = $this->madeline->messages->getDiscussionMessage([
-            'peer' => $this->channelUsername,
-            'msg_id' => $this->postId
-        ]);
+        // Шаг 1: Получаем информацию о посте и группе обсуждений
+        try {
+            $discussion = $this->madeline->messages->getDiscussionMessage([
+                'peer' => $this->channelUsername,
+                'msg_id' => $this->postId
+            ]);
 
-        if (!isset($discussion['chats'][0]['id'])) {
-            echo "Группа обсуждений не найдена или комментарии отключены." . PHP_EOL;
-            return;
-        }
-
-        // ID группы обсуждений
-        $groupId = '-' . $discussion['chats'][0]['id']; // Формат peer для групп
-        $discussionMessageId = $discussion['messages'][0]['id'] ?? null;
-
-        if (!$discussionMessageId) {
-            echo "Не удалось определить ID сообщения для комментариев." . PHP_EOL;
-            return;
-        }
-
-        // Получаем сообщения из группы обсуждений
-        $messages = $this->madeline->messages->getHistory([
-            'peer' => $groupId,
-            'limit' => 100, // Максимальное количество сообщений для извлечения
-            'offset_id' => 0,
-            'max_id' => 0,
-            'min_id' => 0,
-            'add_offset' => 0,
-            'hash' => 0
-        ]);
-
-        // Фильтруем сообщения, которые являются ответами на пост
-        foreach ($messages['messages'] as $message) {
-            if (isset($message['reply_to']) && $message['reply_to']['reply_to_msg_id'] == $discussionMessageId && !empty($message['message'])) {
-                $user = $this->getUserInfo($message['from_id'] ?? null);
-                $comments[] = [
-                    'user' => $user['username'] ?? $user['first_name'] ?? 'Unknown',
-                    'text' => $message['message'],
-                    'date' => date('c', $message['date']),
-                    'message_id' => $message['id']
-                ];
+            // Проверяем, есть ли группа обсуждений
+            if (!isset($discussion['chats'][0]['id'])) {
+                echo "Группа обсуждений не найдена или комментарии отключены для поста ID {$this->postId}." . PHP_EOL;
+                return;
             }
+
+            // ID группы обсуждений (в формате -100XXXXXXXXXX)
+            $groupId = '-' . $discussion['chats'][0]['id'];
+            // ID сообщения в группе, связанного с постом
+            $discussionMessageId = $discussion['messages'][0]['id'] ?? null;
+
+            if (!$discussionMessageId) {
+                echo "Не удалось определить ID сообщения в группе обсуждений." . PHP_EOL;
+                return;
+            }
+
+            echo "Группа обсуждений: {$groupId}, ID сообщения поста в группе: {$discussionMessageId}\n";
+
+            // Шаг 2: Получаем историю сообщений из группы обсуждений
+            $messages = $this->madeline->messages->getHistory([
+                'peer' => $groupId,
+                'limit' => 100, // Ограничение на количество сообщений
+                'offset_id' => 0,
+                'max_id' => 0,
+                'min_id' => 0,
+                'add_offset' => 0,
+                'hash' => 0
+            ]);
+
+            // Шаг 3: Фильтруем сообщения, которые являются комментариями (ответами на пост)
+            foreach ($messages['messages'] as $message) {
+                // Проверяем, является ли сообщение ответом на пост
+                if (isset($message['reply_to']) && 
+                    isset($message['reply_to']['reply_to_msg_id']) &&
+                    $message['reply_to']['reply_to_msg_id'] == $discussionMessageId && 
+                    !empty($message['message'])) {
+                    $user = $this->getUserInfo($message['from_id'] ?? null);
+                    $comments[] = [
+                        'user' => $user['username'] ?? $user['first_name'] ?? 'Unknown',
+                        'text' => $message['message'],
+                        'date' => date('c', $message['date']),
+                        'message_id' => $message['id']
+                    ];
+                }
+            }
+        } catch (\Exception $e) {
+            echo "Ошибка при извлечении комментариев: " . $e->getMessage() . PHP_EOL;
+            error_log("Ошибка при извлечении комментариев: " . $e->getMessage(), 3, __DIR__ . '/../error.log');
+            return;
         }
 
-        // Сохраняем в JSON
+        // Шаг 4: Сохраняем комментарии в JSON
         if (empty($comments)) {
-            echo "Комментариев к посту не найдено." . PHP_EOL;
+            echo "Комментариев к посту ID {$this->postId} не найдено." . PHP_EOL;
         } else {
             file_put_contents(
                 __DIR__ . '/../comments.json',
