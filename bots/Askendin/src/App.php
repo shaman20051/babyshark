@@ -105,13 +105,12 @@ class App
             // Шаг 3: Получаем access_hash, если отсутствует
             if (!$accessHash) {
                 try {
-                    $groupInfo = $this->madeline->channels->getChannels([
-                        'id' => [['_' => 'inputChannel', 'channel_id' => (int)str_replace('-100', '', "-{$groupId}")]]
-                    ]);
-                    echo "Результат getChannels для группы: " . print_r($groupInfo, true) . "\n";
-                    $accessHash = $groupInfo['chats'][0]['access_hash'] ?? null;
+                    $groupPeer = ['_' => 'inputPeerChannel', 'channel_id' => (int)str_replace('-100', '', "-{$groupId}")];
+                    $groupInfo = $this->madeline->getInfo($groupPeer);
+                    echo "Результат getInfo для группы: " . print_r($groupInfo, true) . "\n";
+                    $accessHash = $groupInfo['Chat']['access_hash'] ?? null;
                     if (!$accessHash) {
-                        echo "Не удалось получить access_hash через getChannels." . PHP_EOL;
+                        echo "Не удалось получить access_hash через getInfo." . PHP_EOL;
                         return;
                     }
                 } catch (\Exception $e) {
