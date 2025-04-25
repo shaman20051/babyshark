@@ -78,6 +78,9 @@ class App
                 return;
             }
 
+            // Отладка: Выводим полную структуру $discussion['chats']
+            echo "Структура discussion['chats']: " . print_r($discussion['chats'], true) . "\n";
+
             // ID группы обсуждений
             $groupId = $discussion['chats'][0]['id'];
             // ID сообщения в группе, связанного с постом
@@ -90,11 +93,6 @@ class App
                 return;
             }
 
-            if (!$accessHash) {
-                echo "Не удалось получить access_hash для группы обсуждений." . PHP_EOL;
-                return;
-            }
-
             echo "Группа обсуждений: -{$groupId}, ID сообщения поста в группе: {$discussionMessageId}\n";
             echo "Информация о группе: " . print_r($discussion['chats'][0], true) . "\n";
 
@@ -104,14 +102,30 @@ class App
                 return;
             }
 
-            // Шаг 3: Формируем peer для группы
+            // Шаг 3: Получаем access_hash, если отсутствует
+            if (!$accessHash) {
+                try {
+                    $groupInfo = $this->madeline->getPwrChat("-{$groupId}");
+                    echo "Результат getPwrChat для группы: " . print_r($groupInfo, true) . "\n";
+                    $accessHash = $groupInfo['access_hash'] ?? null;
+                    if (!$accessHash) {
+                        echo "Не удалось получить access_hash через getPwrChat." . PHP_EOL;
+                        return;
+                    }
+                } catch (\Exception $e) {
+                    echo "Ошибка при получении access_hash для группы: " . $e->getMessage() . "\n";
+                    return;
+                }
+            }
+
+            // Шаг 4: Формируем peer для группы
             $peer = [
                 '_' => 'inputPeerChannel',
                 'channel_id' => (int)str_replace('-100', '', "-{$groupId}"),
                 'access_hash' => $accessHash
             ];
 
-            // Шаг 4: Получаем историю сообщений из группы обсуждений
+            // Шаг 5: Получаем историю сообщений из группы обсуждений
             try {
                 $messages = $this->madeline->messages->getHistory([
                     'peer' => $peer,
@@ -123,7 +137,7 @@ class App
                     'hash' => 0
                 ]);
 
-                // Шаг 5: Фильтруем сообщения, которые являются комментариями
+                // Шаг 6: Фильтруем сообщения, которые являются комментариями
                 foreach ($messages['messages'] as $message) {
                     echo "Сообщение ID {$message['id']}, reply_to: " . print_r($message['reply_to'] ?? null, true) . "\n";
                     if ($message['id'] >= $discussionMessageId && !empty($message['message'])) {
@@ -142,7 +156,7 @@ class App
                 return;
             }
 
-            // Шаг 6: Сохраняем комментарии в JSON
+            // Шаг 7: Сохраняем комментарии в JSON
             if (empty($comments)) {
                 echo "Комментариев к посту ID {$this->postId} не найдено." . PHP_EOL;
             } else {
