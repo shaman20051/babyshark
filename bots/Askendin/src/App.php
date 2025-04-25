@@ -81,7 +81,7 @@ class App
             $peer = ['_' => 'inputPeerChannel', 'channel_id' => $groupId, 'access_hash' => $discussion['chats'][0]['access_hash']];
 
             // Шаг 3: Получаем историю сообщений из группы обсуждений
-            $messages = $this->madeline->messages->get>Report History([
+            $messages = $this->madeline->messages->getHistory([
                 'peer' => $peer,
                 'limit' => 100,
                 'offset_id' => 0,
