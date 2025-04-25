@@ -86,17 +86,17 @@ class App
 
             // Шаг 2: Регистрируем peer
             try {
-                $this->madeline->channels->getChannels([
-                    'id' => [['_' => 'inputChannel', 'channel_id' => $groupId]]
-                ]);
+                $this->madeline->messages->getPeerDialogs(['peers' => ["-{$groupId}"]]);
                 echo "Группа успешно зарегистрирована в базе MadelineProto.\n";
             } catch (\Exception $e) {
                 echo "Ошибка при регистрации группы: " . $e->getMessage() . "\n";
                 return;
             }
 
-            // Шаг 3: Получаем историю сообщений из группы обсуждений
-            $peer = "-{$groupId}";
+            // Шаг 3: Формируем peer
+            $peer = ['_' => 'inputPeerChannel', 'channel_id' => $groupId];
+
+            // Шаг 4: Получаем историю сообщений из группы обсуждений
             $messages = $this->madeline->messages->getHistory([
                 'peer' => $peer,
                 'limit' => 200,
@@ -107,7 +107,7 @@ class App
                 'hash' => 0
             ]);
 
-            // Шаг 4: Фильтруем сообщения, которые являются комментариями
+            // Шаг 5: Фильтруем сообщения, которые являются комментариями
             foreach ($messages['messages'] as $message) {
                 echo "Сообщение ID {$message['id']}, reply_to: " . print_r($message['reply_to'] ?? null, true) . "\n";
                 if (isset($message['reply_to']) &&
@@ -129,7 +129,7 @@ class App
             return;
         }
 
-        // Шаг 5: Сохраняем комментарии в JSON
+        // Шаг 6: Сохраняем комментарии в JSON
         if (empty($comments)) {
             echo "Комментариев к посту ID {$this->postId} не найдено." . PHP_EOL;
         } else {
