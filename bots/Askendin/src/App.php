@@ -41,6 +41,10 @@ class App
                 $this->madeline->completePhoneLogin($code);
             }
 
+            // Отладка: Проверяем статус аккаунта
+            $self = $this->madeline->getSelf();
+            echo "Информация об аккаунте: " . print_r($self, true) . "\n";
+
             $this->extractComments();
         } catch (\Exception $e) {
             error_log("Ошибка: " . $e->getMessage(), 3, __DIR__ . '/../error.log');
@@ -86,17 +90,17 @@ class App
 
             // Шаг 2: Регистрируем peer
             try {
-                $this->madeline->channels->getFullChannel([
-                    'channel' => ['_' => 'inputChannel', 'channel_id' => $groupId]
+                $dialogs = $this->madeline->messages->getPeerDialogs([
+                    'peers' => [['_' => 'inputChannel', 'channel_id' => $groupId]]
                 ]);
-                echo "Группа успешно зарегистрирована в базе MadelineProto.\n";
+                echo "Результат регистрации группы: " . print_r($dialogs, true) . "\n";
             } catch (\Exception $e) {
                 echo "Ошибка при регистрации группы: " . $e->getMessage() . "\n";
                 return;
             }
 
             // Шаг 3: Формируем peer
-            $peer = ['_' => 'inputPeerChannel', 'channel_id' => $groupId];
+            $peer = "-{$groupId}";
 
             // Шаг 4: Получаем историю сообщений из группы обсуждений
             $messages = $this->madeline->messages->getHistory([
