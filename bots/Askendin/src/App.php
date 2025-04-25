@@ -76,9 +76,17 @@ class App
             }
 
             echo "Группа обсуждений: -{$groupId}, ID сообщения поста в группе: {$discussionMessageId}\n";
+            echo "Информация о группе: " . print_r($discussion['chats'][0], true) . "\n";
 
-            // Шаг 2: Формируем InputPeer для группы
-            $peer = ['_' => 'inputPeerChannel', 'channel_id' => $groupId, 'access_hash' => $discussion['chats'][0]['access_hash']];
+            // Шаг 2: Формируем peer для группы
+            $peer = "-{$groupId}"; // Используем строковый формат peer
+            if (isset($discussion['chats'][0]['access_hash'])) {
+                $peer = [
+                    '_' => 'inputPeerChannel',
+                    'channel_id' => $groupId,
+                    'access_hash' => $discussion['chats'][0]['access_hash']
+                ];
+            }
 
             // Шаг 3: Получаем историю сообщений из группы обсуждений
             $messages = $this->madeline->messages->getHistory([
