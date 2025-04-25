@@ -1,5 +1,10 @@
 # Создаем приложение для чтения комментов
 
+https://t.me/babyshark4/13402?single - нужный пост
+https://t.me/c/1435519780/217882
+https://t.me/babyshark4/13402?comment=218328
+
+
 * Откройте https://my.telegram.org и войдите, используя номер телефона, связанный с вашим Telegram-аккаунтом.
 На главной странице выберите API development tools.
 
