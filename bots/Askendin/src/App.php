@@ -97,64 +97,63 @@ class App
                 return;
             }
 
-            // Проверяем членство в группе
+            // Шаг 3: Регистрируем группу обсуждений
             try {
-                $groupInfo = $this->madeline->getInfo("-{$groupId}");
+                $groupInfo = $this->madeline->getInfo(['_' => 'inputPeerChannel', 'channel_id' => (int)str_replace('-100', '', "-{$groupId}")]);
                 echo "Результат getInfo для группы: " . print_r($groupInfo, true) . "\n";
-                $participants = $this->madeline->channels->getParticipants([
-                    'channel' => ['_' => 'inputChannel', 'channel_id' => (int)str_replace('-100', '', "-{$groupId}")],
-                    'filter' => ['_' => 'channelParticipantsRecent'],
-                    'offset' => 0,
-                    'limit' => 1
-                ]);
-                echo "Статус членства в группе: " . print_r($participants, true) . "\n";
             } catch (\Exception $e) {
-                echo "Ошибка при проверке группы или членства: " . $e->getMessage() . "\n";
+                echo "Ошибка при регистрации группы: " . $e->getMessage() . "\n";
                 return;
             }
 
-            // Шаг 3: Формируем peer
-            $peer = "-{$groupId}";
+            // Шаг 4: Формируем peer
+            $peer = ['_' => 'inputPeerChannel', 'channel_id' => (int)str_replace('-100', '', "-{$groupId}")];
 
-            // Шаг 4: Получаем историю сообщений из группы обсуждений
-            $messages = $this->madeline->messages->getHistory([
-                'peer' => $peer,
-                'limit' => 200,
-                'offset_id' => 0,
-                'max_id' => 0,
-                'min_id' => 0,
-                'add_offset' => 0,
-                'hash' => 0
-            ]);
+            // Шаг 5: Получаем историю сообщений из группы обсуждений
+            try {
+                $messages = $this->madeline->messages->getHistory([
+                    'peer' => $peer,
+                    'limit' => 200,
+                    'offset_id' => 0,
+                    'max_id' => 0,
+                    'min_id' => 0,
+                    'add_offset' => 0,
+                    'hash' => 0
+                ]);
 
-            // Шаг 5: Фильтруем сообщения, которые являются комментариями
-            foreach ($messages['messages'] as $message) {
-                echo "Сообщение ID {$message['id']}, reply_to: " . print_r($message['reply_to'] ?? null, true) . "\n";
-                if ($message['id'] >= $discussionMessageId && !empty($message['message'])) {
-                    $user = $this->getUserInfo($message['from_id'] ?? null);
-                    $comments[] = [
-                        'user' => $user['username'] ?? $user['first_name'] ?? 'Unknown',
-                        'text' => $message['message'],
-                        'date' => date('c', $message['date']),
-                        'message_id' => $message['id']
-                    ];
+                // Шаг 6: Фильтруем сообщения, которые являются комментариями
+                foreach ($messages['messages'] as $message) {
+                    echo "Сообщение ID {$message['id']}, reply_to: " . print_r($message['reply_to'] ?? null, true) . "\n";
+                    if ($message['id'] >= $discussionMessageId && !empty($message['message'])) {
+                        $user = $this->getUserInfo($message['from_id'] ?? null);
+                        $comments[] = [
+                            'user' => $user['username'] ?? $user['first_name'] ?? 'Unknown',
+                            'text' => $message['message'],
+                            'date' => date('c', $message['date']),
+                            'message_id' => $message['id']
+                        ];
+                    }
                 }
+            } catch (\Exception $e) {
+                echo "Ошибка при извлечении комментариев: " . $e->getMessage() . PHP_EOL;
+                error_log("Ошибка при извлечении комментариев: " . $e->getMessage(), 3, __DIR__ . '/../error.log');
+                return;
+            }
+
+            // Шаг 7: Сохраняем комментарии в JSON
+            if (empty($comments)) {
+                echo "Комментариев к посту ID {$this->postId} не найдено." . PHP_EOL;
+            } else {
+                file_put_contents(
+                    __DIR__ . '/../comments.json',
+                    json_encode($comments, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)
+                );
+                echo "Извлечено " . count($comments) . " комментариев. Сохранено в comments.json" . PHP_EOL;
             }
         } catch (\Exception $e) {
             echo "Ошибка при извлечении комментариев: " . $e->getMessage() . PHP_EOL;
             error_log("Ошибка при извлечении комментариев: " . $e->getMessage(), 3, __DIR__ . '/../error.log');
             return;
-        }
-
-        // Шаг 6: Сохраняем комментарии в JSON
-        if (empty($comments)) {
-            echo "Комментариев к посту ID {$this->postId} не найдено." . PHP_EOL;
-        } else {
-            file_put_contents(
-                __DIR__ . '/../comments.json',
-                json_encode($comments, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)
-            );
-            echo "Извлечено " . count($comments) . " комментариев. Сохранено в comments.json" . PHP_EOL;
         }
     }
 
