@@ -65,8 +65,8 @@ class App
                 return;
             }
 
-            // ID группы обсуждений (в формате -100XXXXXXXXXX)
-            $groupId = '-' . $discussion['chats'][0]['id'];
+            // ID группы обсуждений
+            $groupId = $discussion['chats'][0]['id'];
             // ID сообщения в группе, связанного с постом
             $discussionMessageId = $discussion['messages'][0]['id'] ?? null;
 
@@ -75,12 +75,15 @@ class App
                 return;
             }
 
-            echo "Группа обсуждений: {$groupId}, ID сообщения поста в группе: {$discussionMessageId}\n";
+            echo "Группа обсуждений: -{$groupId}, ID сообщения поста в группе: {$discussionMessageId}\n";
 
-            // Шаг 2: Получаем историю сообщений из группы обсуждений
-            $messages = $this->madeline->messages->getHistory([
-                'peer' => $groupId,
-                'limit' => 100, // Ограничение на количество сообщений
+            // Шаг 2: Формируем InputPeer для группы
+            $peer = ['_' => 'inputPeerChannel', 'channel_id' => $groupId, 'access_hash' => $discussion['chats'][0]['access_hash']];
+
+            // Шаг 3: Получаем историю сообщений из группы обсуждений
+            $messages = $this->madeline->messages->get>Report History([
+                'peer' => $peer,
+                'limit' => 100,
                 'offset_id' => 0,
                 'max_id' => 0,
                 'min_id' => 0,
@@ -88,12 +91,11 @@ class App
                 'hash' => 0
             ]);
 
-            // Шаг 3: Фильтруем сообщения, которые являются комментариями (ответами на пост)
+            // Шаг 4: Фильтруем сообщения, которые являются комментариями
             foreach ($messages['messages'] as $message) {
-                // Проверяем, является ли сообщение ответом на пост
-                if (isset($message['reply_to']) && 
+                if (isset($message['reply_to']) &&
                     isset($message['reply_to']['reply_to_msg_id']) &&
-                    $message['reply_to']['reply_to_msg_id'] == $discussionMessageId && 
+                    $message['reply_to']['reply_to_msg_id'] == $discussionMessageId &&
                     !empty($message['message'])) {
                     $user = $this->getUserInfo($message['from_id'] ?? null);
                     $comments[] = [
@@ -110,7 +112,7 @@ class App
             return;
         }
 
-        // Шаг 4: Сохраняем комментарии в JSON
+        // Шаг 5: Сохраняем комментарии в JSON
         if (empty($comments)) {
             echo "Комментариев к посту ID {$this->postId} не найдено." . PHP_EOL;
         } else {
