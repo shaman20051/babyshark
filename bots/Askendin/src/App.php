@@ -41,6 +41,10 @@ class App
                 $this->madeline->completePhoneLogin($code);
             }
 
+            // Отладка: Проверяем статус аккаунта
+            $self = $this->madeline->getSelf();
+            echo "Информация об аккаунте: " . print_r($self, true) . "\n";
+
             $this->extractComments();
         } catch (\Exception $e) {
             error_log("Ошибка: " . $e->getMessage(), 3, __DIR__ . '/../error.log');
@@ -52,7 +56,16 @@ class App
     {
         $comments = [];
 
-        // Шаг 1: Получаем информацию о посте и группе обсуждений
+        // Шаг 1: Регистрируем канал
+        try {
+            $channelInfo = $this->madeline->getInfo($this->channelUsername);
+            echo "Результат getInfo для канала: " . print_r($channelInfo, true) . "\n";
+        } catch (\Exception $e) {
+            echo "Ошибка при регистрации канала: " . $e->getMessage() . "\n";
+            return;
+        }
+
+        // Шаг 2: Получаем информацию о посте и группе обсуждений
         try {
             $discussion = $this->madeline->messages->getDiscussionMessage([
                 'peer' => $this->channelUsername,
@@ -84,22 +97,29 @@ class App
                 return;
             }
 
-            // Шаг 2: Формируем peer для группы
-            $peer = "-{$groupId}"; // Строковый формат peer
-            if (isset($discussion['chats'][0]['access_hash'])) {
-                $peer = [
-                    '_' => 'inputPeerChannel',
-                    'channel_id' => $groupId,
-                    'access_hash' => $discussion['chats'][0]['access_hash']
-                ];
-            } elseif (isset($discussion['chats'][0]['megagroup']) && $discussion['chats'][0]['megagroup']) {
-                $peer = ['_' => 'inputPeerChat', 'chat_id' => $groupId];
+            // Проверяем членство в группе
+            try {
+                $groupInfo = $this->madeline->getInfo("-{$groupId}");
+                echo "Результат getInfo для группы: " . print_r($groupInfo, true) . "\n";
+                $participants = $this->madeline->channels->getParticipants([
+                    'channel' => ['_' => 'inputChannel', 'channel_id' => (int)str_replace('-100', '', "-{$groupId}")],
+                    'filter' => ['_' => 'channelParticipantsRecent'],
+                    'offset' => 0,
+                    'limit' => 1
+                ]);
+                echo "Статус членства в группе: " . print_r($participants, true) . "\n";
+            } catch (\Exception $e) {
+                echo "Ошибка при проверке группы или членства: " . $e->getMessage() . "\n";
+                return;
             }
 
-            // Шаг 3: Получаем историю сообщений из группы обсуждений
+            // Шаг 3: Формируем peer
+            $peer = "-{$groupId}";
+
+            // Шаг 4: Получаем историю сообщений из группы обсуждений
             $messages = $this->madeline->messages->getHistory([
                 'peer' => $peer,
-                'limit' => 100,
+                'limit' => 200,
                 'offset_id' => 0,
                 'max_id' => 0,
                 'min_id' => 0,
@@ -107,12 +127,10 @@ class App
                 'hash' => 0
             ]);
 
-            // Шаг 4: Фильтруем сообщения, которые являются комментариями
+            // Шаг 5: Фильтруем сообщения, которые являются комментариями
             foreach ($messages['messages'] as $message) {
-                if (isset($message['reply_to']) &&
-                    isset($message['reply_to']['reply_to_msg_id']) &&
-                    $message['reply_to']['reply_to_msg_id'] == $discussionMessageId &&
-                    !empty($message['message'])) {
+                echo "Сообщение ID {$message['id']}, reply_to: " . print_r($message['reply_to'] ?? null, true) . "\n";
+                if ($message['id'] >= $discussionMessageId && !empty($message['message'])) {
                     $user = $this->getUserInfo($message['from_id'] ?? null);
                     $comments[] = [
                         'user' => $user['username'] ?? $user['first_name'] ?? 'Unknown',
@@ -128,7 +146,7 @@ class App
             return;
         }
 
-        // Шаг 5: Сохраняем комментарии в JSON
+        // Шаг 6: Сохраняем комментарии в JSON
         if (empty($comments)) {
             echo "Комментариев к посту ID {$this->postId} не найдено." . PHP_EOL;
         } else {
