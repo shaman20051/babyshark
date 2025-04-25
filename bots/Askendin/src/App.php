@@ -82,9 +82,16 @@ class App
             $groupId = $discussion['chats'][0]['id'];
             // ID сообщения в группе, связанного с постом
             $discussionMessageId = $discussion['messages'][0]['id'] ?? null;
+            // Access hash группы (для приватной группы)
+            $accessHash = $discussion['chats'][0]['access_hash'] ?? null;
 
             if (!$discussionMessageId) {
                 echo "Не удалось определить ID сообщения в группе обсуждений." . PHP_EOL;
+                return;
+            }
+
+            if (!$accessHash) {
+                echo "Не удалось получить access_hash для группы обсуждений." . PHP_EOL;
                 return;
             }
 
@@ -97,19 +104,14 @@ class App
                 return;
             }
 
-            // Шаг 3: Регистрируем группу обсуждений
-            try {
-                $groupInfo = $this->madeline->getInfo(['_' => 'inputPeerChannel', 'channel_id' => (int)str_replace('-100', '', "-{$groupId}")]);
-                echo "Результат getInfo для группы: " . print_r($groupInfo, true) . "\n";
-            } catch (\Exception $e) {
-                echo "Ошибка при регистрации группы: " . $e->getMessage() . "\n";
-                return;
-            }
+            // Шаг 3: Формируем peer для группы
+            $peer = [
+                '_' => 'inputPeerChannel',
+                'channel_id' => (int)str_replace('-100', '', "-{$groupId}"),
+                'access_hash' => $accessHash
+            ];
 
-            // Шаг 4: Формируем peer
-            $peer = ['_' => 'inputPeerChannel', 'channel_id' => (int)str_replace('-100', '', "-{$groupId}")];
-
-            // Шаг 5: Получаем историю сообщений из группы обсуждений
+            // Шаг 4: Получаем историю сообщений из группы обсуждений
             try {
                 $messages = $this->madeline->messages->getHistory([
                     'peer' => $peer,
@@ -121,7 +123,7 @@ class App
                     'hash' => 0
                 ]);
 
-                // Шаг 6: Фильтруем сообщения, которые являются комментариями
+                // Шаг 5: Фильтруем сообщения, которые являются комментариями
                 foreach ($messages['messages'] as $message) {
                     echo "Сообщение ID {$message['id']}, reply_to: " . print_r($message['reply_to'] ?? null, true) . "\n";
                     if ($message['id'] >= $discussionMessageId && !empty($message['message'])) {
@@ -140,7 +142,7 @@ class App
                 return;
             }
 
-            // Шаг 7: Сохраняем комментарии в JSON
+            // Шаг 6: Сохраняем комментарии в JSON
             if (empty($comments)) {
                 echo "Комментариев к посту ID {$this->postId} не найдено." . PHP_EOL;
             } else {
