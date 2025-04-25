@@ -86,7 +86,9 @@ class App
 
             // Шаг 2: Регистрируем peer
             try {
-                $this->madeline->messages->getPeerDialogs(['peers' => ["-{$groupId}"]]);
+                $this->madeline->channels->getFullChannel([
+                    'channel' => ['_' => 'inputChannel', 'channel_id' => $groupId]
+                ]);
                 echo "Группа успешно зарегистрирована в базе MadelineProto.\n";
             } catch (\Exception $e) {
                 echo "Ошибка при регистрации группы: " . $e->getMessage() . "\n";
