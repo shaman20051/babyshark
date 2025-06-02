@@ -1,7 +1,7 @@
 <?php
 $token = '7337016333:AAHh_MoIJ9mwBE39k4Pggz8eQScG3-l5UgA';
 $bot_id = '7337016333'; // Полученный ID
-// $channel = '@babyshark4';
+// $channel = '@babyshark4'; // post 13402
 // $channel_id = '-1001103182277'; // @babyshark4 Используем числовой ID из getChat
 
 // https://t.me/sharkparty1kk/209
